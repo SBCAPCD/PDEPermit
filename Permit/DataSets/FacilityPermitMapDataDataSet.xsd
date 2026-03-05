@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FacilityPermitMapDataDataSet" targetNamespace="http://tempuri.org/FacilityPermitMapDataDataSet.xsd" xmlns:mstns="http://tempuri.org/FacilityPermitMapDataDataSet.xsd" xmlns="http://tempuri.org/FacilityPermitMapDataDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FacilityPermitMapDataDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FacilityPermitMapDataDataSet" msprop:Generator_UserDSName="FacilityPermitMapDataDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FacilityPermitMapData" msprop:Generator_TableClassName="FacilityPermitMapDataDataTable" msprop:Generator_TableVarName="tableFacilityPermitMapData" msprop:Generator_TablePropName="FacilityPermitMapData" msprop:Generator_RowDeletingName="FacilityPermitMapDataRowDeleting" msprop:Generator_RowChangingName="FacilityPermitMapDataRowChanging" msprop:Generator_RowEvHandlerName="FacilityPermitMapDataRowChangeEventHandler" msprop:Generator_RowDeletedName="FacilityPermitMapDataRowDeleted" msprop:Generator_UserTableName="FacilityPermitMapData" msprop:Generator_RowChangedName="FacilityPermitMapDataRowChanged" msprop:Generator_RowEvArgName="FacilityPermitMapDataRowChangeEvent" msprop:Generator_RowClassName="FacilityPermitMapDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" type="xs:string" />
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo" type="xs:string" />
+              <xs:element name="DocumentType" msprop:Generator_ColumnVarNameInTable="columnDocumentType" msprop:Generator_ColumnPropNameInRow="DocumentType" msprop:Generator_ColumnPropNameInTable="DocumentTypeColumn" msprop:Generator_UserColumnName="DocumentType" type="xs:string" />
+              <xs:element name="PermitNumber" msprop:Generator_ColumnVarNameInTable="columnPermitNumber" msprop:Generator_ColumnPropNameInRow="PermitNumber" msprop:Generator_ColumnPropNameInTable="PermitNumberColumn" msprop:Generator_UserColumnName="PermitNumber" type="xs:string" />
+              <xs:element name="PermitSuffix" msprop:Generator_ColumnVarNameInTable="columnPermitSuffix" msprop:Generator_ColumnPropNameInRow="PermitSuffix" msprop:Generator_ColumnPropNameInTable="PermitSuffixColumn" msprop:Generator_UserColumnName="PermitSuffix" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitType" msprop:Generator_ColumnVarNameInTable="columnPermitType" msprop:Generator_ColumnPropNameInRow="PermitType" msprop:Generator_ColumnPropNameInTable="PermitTypeColumn" msprop:Generator_UserColumnName="PermitType" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitDesc" msprop:Generator_ColumnVarNameInTable="columnPermitDesc" msprop:Generator_ColumnPropNameInRow="PermitDesc" msprop:Generator_ColumnPropNameInTable="PermitDescColumn" msprop:Generator_UserColumnName="PermitDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="FinalPermitPath" msprop:Generator_ColumnVarNameInTable="columnFinalPermitPath" msprop:Generator_ColumnPropNameInRow="FinalPermitPath" msprop:Generator_ColumnPropNameInTable="FinalPermitPathColumn" msprop:Generator_UserColumnName="FinalPermitPath" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitFolderPath" msprop:Generator_ColumnVarNameInTable="columnPermitFolderPath" msprop:Generator_ColumnPropNameInRow="PermitFolderPath" msprop:Generator_ColumnPropNameInTable="PermitFolderPathColumn" msprop:Generator_UserColumnName="PermitFolderPath" type="xs:string" minOccurs="0" />
+              <xs:element name="ApplicationPath" msprop:Generator_ColumnVarNameInTable="columnApplicationPath" msprop:Generator_ColumnPropNameInRow="ApplicationPath" msprop:Generator_ColumnPropNameInTable="ApplicationPathColumn" msprop:Generator_UserColumnName="ApplicationPath" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

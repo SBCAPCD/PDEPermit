@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CompanyAuxDataSet" targetNamespace="http://tempuri.org/CompanyAuxDataSet.xsd" xmlns:mstns="http://tempuri.org/CompanyAuxDataSet.xsd" xmlns="http://tempuri.org/CompanyAuxDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Company.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CompanyAuxDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CompanyAuxDataSet" msprop:Generator_DataSetName="CompanyAuxDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Facility" msprop:Generator_UserTableName="Facility" msprop:Generator_RowDeletedName="FacilityRowDeleted" msprop:Generator_RowChangedName="FacilityRowChanged" msprop:Generator_RowClassName="FacilityRow" msprop:Generator_RowChangingName="FacilityRowChanging" msprop:Generator_RowEvArgName="FacilityRowChangeEvent" msprop:Generator_RowEvHandlerName="FacilityRowChangeEventHandler" msprop:Generator_TableClassName="FacilityDataTable" msprop:Generator_TableVarName="tableFacility" msprop:Generator_RowDeletingName="FacilityRowDeleting" msprop:Generator_TablePropName="Facility">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FacilityNo" msprop:Generator_UserColumnName="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_ColumnPropNameInRow="FacilityNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityName" msprop:Generator_UserColumnName="FacilityName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnFacilityName" msprop:Generator_ColumnPropNameInTable="FacilityNameColumn" msprop:Generator_ColumnPropNameInRow="FacilityName" type="xs:string" />
+              <xs:element name="CompanyNo" msprop:Generator_UserColumnName="CompanyNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCompanyNo" msprop:Generator_ColumnPropNameInTable="CompanyNoColumn" msprop:Generator_ColumnPropNameInRow="CompanyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Contact" msprop:Generator_UserTableName="Contact" msprop:Generator_RowDeletedName="ContactRowDeleted" msprop:Generator_RowChangedName="ContactRowChanged" msprop:Generator_RowClassName="ContactRow" msprop:Generator_RowChangingName="ContactRowChanging" msprop:Generator_RowEvArgName="ContactRowChangeEvent" msprop:Generator_RowEvHandlerName="ContactRowChangeEventHandler" msprop:Generator_TableClassName="ContactDataTable" msprop:Generator_TableVarName="tableContact" msprop:Generator_RowDeletingName="ContactRowDeleting" msprop:Generator_TablePropName="Contact">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyNo" msprop:Generator_UserColumnName="CompanyNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCompanyNo" msprop:Generator_ColumnPropNameInTable="CompanyNoColumn" msprop:Generator_ColumnPropNameInRow="CompanyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactId" msprop:Generator_UserColumnName="ContactId" msprop:Generator_ColumnPropNameInRow="ContactId" msprop:Generator_ColumnVarNameInTable="columnContactId" msprop:Generator_ColumnPropNameInTable="ContactIdColumn" type="xs:int" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnPropNameInRow="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="StreetAddressComplete" msprop:Generator_UserColumnName="StreetAddressComplete" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnStreetAddressComplete" msprop:Generator_ColumnPropNameInTable="StreetAddressCompleteColumn" msprop:Generator_ColumnPropNameInRow="StreetAddressComplete" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactTypeDescription" msprop:Generator_UserColumnName="ContactTypeDescription" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnContactTypeDescription" msprop:Generator_ColumnPropNameInTable="ContactTypeDescriptionColumn" msprop:Generator_ColumnPropNameInRow="ContactTypeDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="PersonNo" msprop:Generator_UserColumnName="PersonNo" msprop:Generator_ColumnPropNameInRow="PersonNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnPersonNo" msprop:Generator_ColumnPropNameInTable="PersonNoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Facility" />
+      <xs:field xpath="mstns:FacilityNo" />
+    </xs:unique>
+    <xs:unique name="Contact_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Contact" />
+      <xs:field xpath="mstns:ContactId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

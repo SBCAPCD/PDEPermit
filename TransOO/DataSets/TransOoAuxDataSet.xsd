@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TransOoAuxDataSet" targetNamespace="http://tempuri.org/TransOoAuxDataSet.xsd" xmlns:mstns="http://tempuri.org/TransOoAuxDataSet.xsd" xmlns="http://tempuri.org/TransOoAuxDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PDEPermit.TransOo.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TransOoAuxDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TransOoAuxDataSet" msprop:Generator_UserDSName="TransOoAuxDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FacilityList" msprop:Generator_TableClassName="FacilityListDataTable" msprop:Generator_TableVarName="tableFacilityList" msprop:Generator_RowChangedName="FacilityListRowChanged" msprop:Generator_TablePropName="FacilityList" msprop:Generator_RowDeletingName="FacilityListRowDeleting" msprop:Generator_RowChangingName="FacilityListRowChanging" msprop:Generator_RowEvHandlerName="FacilityListRowChangeEventHandler" msprop:Generator_RowDeletedName="FacilityListRowDeleted" msprop:Generator_RowClassName="FacilityListRow" msprop:Generator_UserTableName="FacilityList" msprop:Generator_RowEvArgName="FacilityListRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" type="xs:string" minOccurs="0" />
+              <xs:element name="FacilityName" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityName" msprop:Generator_ColumnVarNameInTable="columnFacilityName" msprop:Generator_ColumnPropNameInTable="FacilityNameColumn" msprop:Generator_UserColumnName="FacilityName" type="xs:string" minOccurs="0" />
+              <xs:element name="StationarySourceNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitStatus" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitStatus" msprop:Generator_ColumnVarNameInTable="columnPermitStatus" msprop:Generator_ColumnPropNameInTable="PermitStatusColumn" msprop:Generator_UserColumnName="PermitStatus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StationarySourceList" msprop:Generator_TableClassName="StationarySourceListDataTable" msprop:Generator_TableVarName="tableStationarySourceList" msprop:Generator_RowChangedName="StationarySourceListRowChanged" msprop:Generator_TablePropName="StationarySourceList" msprop:Generator_RowDeletingName="StationarySourceListRowDeleting" msprop:Generator_RowChangingName="StationarySourceListRowChanging" msprop:Generator_RowEvHandlerName="StationarySourceListRowChangeEventHandler" msprop:Generator_RowDeletedName="StationarySourceListRowDeleted" msprop:Generator_RowClassName="StationarySourceListRow" msprop:Generator_UserTableName="StationarySourceList" msprop:Generator_RowEvArgName="StationarySourceListRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationarySourceNo" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="StationarySourceName" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceName" msprop:Generator_ColumnVarNameInTable="columnStationarySourceName" msprop:Generator_ColumnPropNameInTable="StationarySourceNameColumn" msprop:Generator_UserColumnName="StationarySourceName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SignEmployee" msprop:Generator_TableClassName="SignEmployeeDataTable" msprop:Generator_TableVarName="tableSignEmployee" msprop:Generator_RowChangedName="SignEmployeeRowChanged" msprop:Generator_TablePropName="SignEmployee" msprop:Generator_RowDeletingName="SignEmployeeRowDeleting" msprop:Generator_RowChangingName="SignEmployeeRowChanging" msprop:Generator_RowEvHandlerName="SignEmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="SignEmployeeRowDeleted" msprop:Generator_RowClassName="SignEmployeeRow" msprop:Generator_UserTableName="SignEmployee" msprop:Generator_RowEvArgName="SignEmployeeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeNo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeNo" msprop:Generator_ColumnPropNameInRow="EmployeeNo" msprop:Generator_ColumnPropNameInTable="EmployeeNoColumn" msprop:Generator_UserColumnName="EmployeeNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="orderNo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnorderNo" msprop:Generator_ColumnPropNameInRow="orderNo" msprop:Generator_ColumnPropNameInTable="orderNoColumn" msprop:Generator_UserColumnName="orderNo" type="xs:int" minOccurs="0" />
+              <xs:element name="SignEmployee" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSignEmployee" msprop:Generator_ColumnPropNameInRow="SignEmployee" msprop:Generator_ColumnPropNameInTable="SignEmployeeColumn" msprop:Generator_UserColumnName="SignEmployee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Ccs" msprop:Generator_TableClassName="CcsDataTable" msprop:Generator_TableVarName="tableCcs" msprop:Generator_TablePropName="Ccs" msprop:Generator_RowDeletingName="CcsRowDeleting" msprop:Generator_RowChangingName="CcsRowChanging" msprop:Generator_RowEvHandlerName="CcsRowChangeEventHandler" msprop:Generator_RowDeletedName="CcsRowDeleted" msprop:Generator_UserTableName="Ccs" msprop:Generator_RowChangedName="CcsRowChanged" msprop:Generator_RowEvArgName="CcsRowChangeEvent" msprop:Generator_RowClassName="CcsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContactId" msprop:Generator_ColumnVarNameInTable="columnContactId" msprop:Generator_ColumnPropNameInRow="ContactId" msprop:Generator_ColumnPropNameInTable="ContactIdColumn" msprop:Generator_UserColumnName="ContactId" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

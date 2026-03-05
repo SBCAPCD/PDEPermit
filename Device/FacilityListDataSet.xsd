@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FacilityListDataSet" targetNamespace="http://tempuri.org/FacilityListDataSet.xsd" xmlns:mstns="http://tempuri.org/FacilityListDataSet.xsd" xmlns="http://tempuri.org/FacilityListDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Device.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FacilityListDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FacilityListDataSet" msprop:Generator_DataSetName="FacilityListDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FacilityList" msprop:Generator_UserTableName="FacilityList" msprop:Generator_RowDeletedName="FacilityListRowDeleted" msprop:Generator_RowChangedName="FacilityListRowChanged" msprop:Generator_RowClassName="FacilityListRow" msprop:Generator_RowChangingName="FacilityListRowChanging" msprop:Generator_RowEvArgName="FacilityListRowChangeEvent" msprop:Generator_RowEvHandlerName="FacilityListRowChangeEventHandler" msprop:Generator_TableClassName="FacilityListDataTable" msprop:Generator_TableVarName="tableFacilityList" msprop:Generator_RowDeletingName="FacilityListRowDeleting" msprop:Generator_TablePropName="FacilityList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FacilityNo" msprop:Generator_UserColumnName="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityName" msprop:Generator_UserColumnName="FacilityName" msprop:Generator_ColumnVarNameInTable="columnFacilityName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityName" msprop:Generator_ColumnPropNameInTable="FacilityNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FacilityNoName" msdata:ReadOnly="true" msdata:Caption="FacilityNoDesc" msprop:Generator_UserColumnName="FacilityNoName" msprop:Generator_ColumnVarNameInTable="columnFacilityNoName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNoName" msprop:Generator_ColumnPropNameInTable="FacilityNoNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FacilityNameNo" msdata:ReadOnly="true" msprop:Generator_UserColumnName="FacilityNameNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNameNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNameNo" msprop:Generator_ColumnPropNameInTable="FacilityNameNoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

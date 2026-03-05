@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TransOoLetterDataSet" targetNamespace="http://tempuri.org/TransOoLetterDataSet.xsd" xmlns:mstns="http://tempuri.org/TransOoLetterDataSet.xsd" xmlns="http://tempuri.org/TransOoLetterDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PDEPermit.TransOo.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TransOoLetterDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TransOoLetterDataSet" msprop:Generator_UserDSName="TransOoLetterDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Letter" msprop:Generator_TableClassName="LetterDataTable" msprop:Generator_TableVarName="tableLetter" msprop:Generator_TablePropName="Letter" msprop:Generator_RowDeletingName="LetterRowDeleting" msprop:Generator_RowChangingName="LetterRowChanging" msprop:Generator_RowEvHandlerName="LetterRowChangeEventHandler" msprop:Generator_RowDeletedName="LetterRowDeleted" msprop:Generator_UserTableName="Letter" msprop:Generator_RowChangedName="LetterRowChanged" msprop:Generator_RowEvArgName="LetterRowChangeEvent" msprop:Generator_RowClassName="LetterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LetterNo" msprop:Generator_ColumnVarNameInTable="columnLetterNo" msprop:Generator_ColumnPropNameInRow="LetterNo" msprop:Generator_ColumnPropNameInTable="LetterNoColumn" msprop:Generator_UserColumnName="LetterNo" type="xs:int" />
+              <xs:element name="PermitNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo" type="xs:string" minOccurs="0" />
+              <xs:element name="LetterTypeId" msprop:Generator_ColumnVarNameInTable="columnLetterTypeId" msprop:Generator_ColumnPropNameInRow="LetterTypeId" msprop:Generator_ColumnPropNameInTable="LetterTypeIdColumn" msprop:Generator_UserColumnName="LetterTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="ContactId" msprop:Generator_ColumnVarNameInTable="columnContactId" msprop:Generator_ColumnPropNameInRow="ContactId" msprop:Generator_ColumnPropNameInTable="ContactIdColumn" msprop:Generator_UserColumnName="ContactId" type="xs:int" minOccurs="0" />
+              <xs:element name="LetterName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LetterName" msprop:Generator_ColumnVarNameInTable="columnLetterName" msprop:Generator_ColumnPropNameInTable="LetterNameColumn" msprop:Generator_UserColumnName="LetterName" type="xs:string" minOccurs="0" />
+              <xs:element name="SaveFolder" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SaveFolder" msprop:Generator_ColumnVarNameInTable="columnSaveFolder" msprop:Generator_ColumnPropNameInTable="SaveFolderColumn" msprop:Generator_UserColumnName="SaveFolder" type="xs:string" minOccurs="0" />
+              <xs:element name="PrintDateOnLetter" msprop:Generator_ColumnVarNameInTable="columnPrintDateOnLetter" msprop:Generator_ColumnPropNameInRow="PrintDateOnLetter" msprop:Generator_ColumnPropNameInTable="PrintDateOnLetterColumn" msprop:Generator_UserColumnName="PrintDateOnLetter" type="xs:boolean" default="false" />
+              <xs:element name="LetterDate" msprop:Generator_ColumnVarNameInTable="columnLetterDate" msprop:Generator_ColumnPropNameInRow="LetterDate" msprop:Generator_ColumnPropNameInTable="LetterDateColumn" msprop:Generator_UserColumnName="LetterDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DaysToDecision" msprop:Generator_ColumnVarNameInTable="columnDaysToDecision" msprop:Generator_ColumnPropNameInRow="DaysToDecision" msprop:Generator_ColumnPropNameInTable="DaysToDecisionColumn" msprop:Generator_UserColumnName="DaysToDecision" type="xs:short" minOccurs="0" />
+              <xs:element name="IncludeLetterhead" msprop:Generator_ColumnVarNameInTable="columnIncludeLetterhead" msprop:Generator_ColumnPropNameInRow="IncludeLetterhead" msprop:Generator_ColumnPropNameInTable="IncludeLetterheadColumn" msprop:Generator_UserColumnName="IncludeLetterhead" type="xs:boolean" default="false" />
+              <xs:element name="ReturnReceipt" msprop:Generator_ColumnVarNameInTable="columnReturnReceipt" msprop:Generator_ColumnPropNameInRow="ReturnReceipt" msprop:Generator_ColumnPropNameInTable="ReturnReceiptColumn" msprop:Generator_UserColumnName="ReturnReceipt" type="xs:boolean" default="false" />
+              <xs:element name="HeaderType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="HeaderType" msprop:Generator_ColumnVarNameInTable="columnHeaderType" msprop:Generator_ColumnPropNameInTable="HeaderTypeColumn" msprop:Generator_UserColumnName="HeaderType" type="xs:string" minOccurs="0" />
+              <xs:element name="Finalized" msprop:Generator_ColumnVarNameInTable="columnFinalized" msprop:Generator_ColumnPropNameInRow="Finalized" msprop:Generator_ColumnPropNameInTable="FinalizedColumn" msprop:Generator_UserColumnName="Finalized" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="SignEmployeeNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SignEmployeeNo" msprop:Generator_ColumnVarNameInTable="columnSignEmployeeNo" msprop:Generator_ColumnPropNameInTable="SignEmployeeNoColumn" msprop:Generator_UserColumnName="SignEmployeeNo" type="xs:string" minOccurs="0" />
+              <xs:element name="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" type="xs:string" minOccurs="0" />
+              <xs:element name="TransSuffix" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="TransSuffix" msprop:Generator_ColumnVarNameInTable="columnTransSuffix" msprop:Generator_ColumnPropNameInTable="TransSuffixColumn" msprop:Generator_UserColumnName="TransSuffix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LetterInsert" msprop:Generator_TableClassName="LetterInsertDataTable" msprop:Generator_TableVarName="tableLetterInsert" msprop:Generator_TablePropName="LetterInsert" msprop:Generator_RowDeletingName="LetterInsertRowDeleting" msprop:Generator_RowChangingName="LetterInsertRowChanging" msprop:Generator_RowEvHandlerName="LetterInsertRowChangeEventHandler" msprop:Generator_RowDeletedName="LetterInsertRowDeleted" msprop:Generator_UserTableName="LetterInsert" msprop:Generator_RowChangedName="LetterInsertRowChanged" msprop:Generator_RowEvArgName="LetterInsertRowChangeEvent" msprop:Generator_RowClassName="LetterInsertRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LetterInsertId" msprop:Generator_ColumnVarNameInTable="columnLetterInsertId" msprop:Generator_ColumnPropNameInRow="LetterInsertId" msprop:Generator_ColumnPropNameInTable="LetterInsertIdColumn" msprop:Generator_UserColumnName="LetterInsertId" type="xs:int" />
+              <xs:element name="LetterNo" msprop:Generator_ColumnVarNameInTable="columnLetterNo" msprop:Generator_ColumnPropNameInRow="LetterNo" msprop:Generator_ColumnPropNameInTable="LetterNoColumn" msprop:Generator_UserColumnName="LetterNo" type="xs:int" />
+              <xs:element name="BookmarkTypeId" msprop:Generator_ColumnVarNameInTable="columnBookmarkTypeId" msprop:Generator_ColumnPropNameInRow="BookmarkTypeId" msprop:Generator_ColumnPropNameInTable="BookmarkTypeIdColumn" msprop:Generator_UserColumnName="BookmarkTypeId" type="xs:int" />
+              <xs:element name="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" msprop:Generator_UserColumnName="SortOrder" type="xs:int" />
+              <xs:element name="TextInsert" msprop:Generator_ColumnVarNameInTable="columnTextInsert" msprop:Generator_ColumnPropNameInRow="TextInsert" msprop:Generator_ColumnPropNameInTable="TextInsertColumn" msprop:Generator_UserColumnName="TextInsert" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LetterCc" msprop:Generator_TableClassName="LetterCcDataTable" msprop:Generator_TableVarName="tableLetterCc" msprop:Generator_TablePropName="LetterCc" msprop:Generator_RowDeletingName="LetterCcRowDeleting" msprop:Generator_RowChangingName="LetterCcRowChanging" msprop:Generator_RowEvHandlerName="LetterCcRowChangeEventHandler" msprop:Generator_RowDeletedName="LetterCcRowDeleted" msprop:Generator_UserTableName="LetterCc" msprop:Generator_RowChangedName="LetterCcRowChanged" msprop:Generator_RowEvArgName="LetterCcRowChangeEvent" msprop:Generator_RowClassName="LetterCcRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LetterNo" msprop:Generator_ColumnVarNameInTable="columnLetterNo" msprop:Generator_ColumnPropNameInRow="LetterNo" msprop:Generator_ColumnPropNameInTable="LetterNoColumn" msprop:Generator_UserColumnName="LetterNo" type="xs:int" />
+              <xs:element name="ContactId" msprop:Generator_ColumnVarNameInTable="columnContactId" msprop:Generator_ColumnPropNameInRow="ContactId" msprop:Generator_ColumnPropNameInTable="ContactIdColumn" msprop:Generator_UserColumnName="ContactId" type="xs:int" />
+              <xs:element name="IsCoverLetterOnly" msprop:Generator_ColumnVarNameInTable="columnIsCoverLetterOnly" msprop:Generator_ColumnPropNameInRow="IsCoverLetterOnly" msprop:Generator_ColumnPropNameInTable="IsCoverLetterOnlyColumn" msprop:Generator_UserColumnName="IsCoverLetterOnly" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" msprop:Generator_UserColumnName="SortOrder" type="xs:int" minOccurs="0" />
+              <xs:element name="ContactName" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LetterTransOo" msprop:Generator_TableClassName="LetterTransOoDataTable" msprop:Generator_TableVarName="tableLetterTransOo" msprop:Generator_TablePropName="LetterTransOo" msprop:Generator_RowDeletingName="LetterTransOoRowDeleting" msprop:Generator_RowChangingName="LetterTransOoRowChanging" msprop:Generator_RowEvHandlerName="LetterTransOoRowChangeEventHandler" msprop:Generator_RowDeletedName="LetterTransOoRowDeleted" msprop:Generator_UserTableName="LetterTransOo" msprop:Generator_RowChangedName="LetterTransOoRowChanged" msprop:Generator_RowEvArgName="LetterTransOoRowChangeEvent" msprop:Generator_RowClassName="LetterTransOoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LetterNo" msprop:Generator_ColumnVarNameInTable="columnLetterNo" msprop:Generator_ColumnPropNameInRow="LetterNo" msprop:Generator_ColumnPropNameInTable="LetterNoColumn" msprop:Generator_UserColumnName="LetterNo" type="xs:int" />
+              <xs:element name="TransferType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="TransferType" msprop:Generator_ColumnVarNameInTable="columnTransferType" msprop:Generator_ColumnPropNameInTable="TransferTypeColumn" msprop:Generator_UserColumnName="TransferType" type="xs:string" minOccurs="0" />
+              <xs:element name="TransferIndex" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="TransferIndex" msprop:Generator_ColumnVarNameInTable="columnTransferIndex" msprop:Generator_ColumnPropNameInTable="TransferIndexColumn" msprop:Generator_UserColumnName="TransferIndex" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Letter" />
+      <xs:field xpath="mstns:LetterNo" />
+    </xs:unique>
+    <xs:unique name="LetterInsert_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LetterInsert" />
+      <xs:field xpath="mstns:LetterInsertId" />
+    </xs:unique>
+    <xs:unique name="LetterCc_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LetterCc" />
+      <xs:field xpath="mstns:ContactId" />
+    </xs:unique>
+    <xs:unique name="LetterTransOo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LetterTransOo" />
+      <xs:field xpath="mstns:LetterNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

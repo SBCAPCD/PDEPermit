@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LettersDataSet" targetNamespace="http://tempuri.org/LettersDataSet.xsd" xmlns:mstns="http://tempuri.org/LettersDataSet.xsd" xmlns="http://tempuri.org/LettersDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LettersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LettersDataSet" msprop:Generator_UserDSName="LettersDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Letters" msprop:Generator_TableClassName="LettersDataTable" msprop:Generator_TableVarName="tableLetters" msprop:Generator_TablePropName="Letters" msprop:Generator_RowDeletingName="LettersRowDeleting" msprop:Generator_RowChangingName="LettersRowChanging" msprop:Generator_RowEvHandlerName="LettersRowChangeEventHandler" msprop:Generator_RowDeletedName="LettersRowDeleted" msprop:Generator_UserTableName="Letters" msprop:Generator_RowChangedName="LettersRowChanged" msprop:Generator_RowEvArgName="LettersRowChangeEvent" msprop:Generator_RowClassName="LettersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LetterNo" msprop:Generator_ColumnVarNameInTable="columnLetterNo" msprop:Generator_ColumnPropNameInRow="LetterNo" msprop:Generator_ColumnPropNameInTable="LetterNoColumn" msprop:Generator_UserColumnName="LetterNo" type="xs:int" minOccurs="0" />
+              <xs:element name="LetterName" msprop:Generator_ColumnVarNameInTable="columnLetterName" msprop:Generator_ColumnPropNameInRow="LetterName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInTable="LetterNameColumn" msprop:Generator_UserColumnName="LetterName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeviceDataSet" targetNamespace="http://tempuri.org/DeviceDataSet.xsd" xmlns:mstns="http://tempuri.org/DeviceDataSet.xsd" xmlns="http://tempuri.org/DeviceDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Device.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DeviceDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DeviceDataSet" msprop:Generator_UserDSName="DeviceDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DeviceList" msprop:Generator_UserTableName="DeviceList" msprop:Generator_RowEvArgName="DeviceListRowChangeEvent" msprop:Generator_TableVarName="tableDeviceList" msprop:Generator_TablePropName="DeviceList" msprop:Generator_RowDeletingName="DeviceListRowDeleting" msprop:Generator_RowChangingName="DeviceListRowChanging" msprop:Generator_RowDeletedName="DeviceListRowDeleted" msprop:Generator_RowEvHandlerName="DeviceListRowChangeEventHandler" msprop:Generator_TableClassName="DeviceListDataTable" msprop:Generator_RowChangedName="DeviceListRowChanged" msprop:Generator_RowClassName="DeviceListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitNoDeviceNo" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitNoDeviceNo" msprop:Generator_ColumnVarNameInTable="columnPermitNoDeviceNo" msprop:Generator_ColumnPropNameInTable="PermitNoDeviceNoColumn" msprop:Generator_UserColumnName="PermitNoDeviceNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeviceNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DeviceNo" msprop:Generator_ColumnVarNameInTable="columnDeviceNo" msprop:Generator_ColumnPropNameInTable="DeviceNoColumn" msprop:Generator_UserColumnName="DeviceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DeviceName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DeviceName" msprop:Generator_ColumnVarNameInTable="columnDeviceName" msprop:Generator_ColumnPropNameInTable="DeviceNameColumn" msprop:Generator_UserColumnName="DeviceName" type="xs:string" minOccurs="0" />
+              <xs:element name="OperatorID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="OperatorID" msprop:Generator_ColumnVarNameInTable="columnOperatorID" msprop:Generator_ColumnPropNameInTable="OperatorIDColumn" msprop:Generator_UserColumnName="OperatorID" type="xs:string" minOccurs="0" />
+              <xs:element name="Manufacturer" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnVarNameInTable="columnManufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_UserColumnName="Manufacturer" type="xs:string" minOccurs="0" />
+              <xs:element name="Make" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Make" msprop:Generator_ColumnVarNameInTable="columnMake" msprop:Generator_ColumnPropNameInTable="MakeColumn" msprop:Generator_UserColumnName="Make" type="xs:string" minOccurs="0" />
+              <xs:element name="Model" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Model" msprop:Generator_ColumnVarNameInTable="columnModel" msprop:Generator_ColumnPropNameInTable="ModelColumn" msprop:Generator_UserColumnName="Model" type="xs:string" minOccurs="0" />
+              <xs:element name="SerialNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SerialNo" msprop:Generator_ColumnVarNameInTable="columnSerialNo" msprop:Generator_ColumnPropNameInTable="SerialNoColumn" msprop:Generator_UserColumnName="SerialNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" msprop:Generator_UserColumnName="Comments" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationNote" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LocationNote" msprop:Generator_ColumnVarNameInTable="columnLocationNote" msprop:Generator_ColumnPropNameInTable="LocationNoteColumn" msprop:Generator_UserColumnName="LocationNote" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubDeviceOf" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SubDeviceOf" msprop:Generator_ColumnVarNameInTable="columnSubDeviceOf" msprop:Generator_ColumnPropNameInTable="SubDeviceOfColumn" msprop:Generator_UserColumnName="SubDeviceOf" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" msprop:Generator_UserColumnName="SortOrder" type="xs:int" minOccurs="0" />
+              <xs:element name="IsGroup" msprop:Generator_ColumnVarNameInTable="columnIsGroup" msprop:Generator_ColumnPropNameInRow="IsGroup" msprop:Generator_ColumnPropNameInTable="IsGroupColumn" msprop:Generator_UserColumnName="IsGroup" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NumberOfDevices" msprop:Generator_ColumnVarNameInTable="columnNumberOfDevices" msprop:Generator_ColumnPropNameInRow="NumberOfDevices" msprop:Generator_ColumnPropNameInTable="NumberOfDevicesColumn" msprop:Generator_UserColumnName="NumberOfDevices" type="xs:int" minOccurs="0" />
+              <xs:element name="RatedHeatInput" msprop:Generator_ColumnVarNameInTable="columnRatedHeatInput" msprop:Generator_ColumnPropNameInRow="RatedHeatInput" msprop:Generator_ColumnPropNameInTable="RatedHeatInputColumn" msprop:Generator_UserColumnName="RatedHeatInput" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BSFC" msprop:Generator_ColumnVarNameInTable="columnBSFC" msprop:Generator_ColumnPropNameInRow="BSFC" msprop:Generator_ColumnPropNameInTable="BSFCColumn" msprop:Generator_UserColumnName="BSFC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PhysicalSize" msprop:Generator_ColumnVarNameInTable="columnPhysicalSize" msprop:Generator_ColumnPropNameInRow="PhysicalSize" msprop:Generator_ColumnPropNameInTable="PhysicalSizeColumn" msprop:Generator_UserColumnName="PhysicalSize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AmendsPermit" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="AmendsPermit" msprop:Generator_ColumnVarNameInTable="columnAmendsPermit" msprop:Generator_ColumnPropNameInTable="AmendsPermitColumn" msprop:Generator_UserColumnName="AmendsPermit" type="xs:string" minOccurs="0" />
+              <xs:element name="DeviceDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DeviceDescription" msprop:Generator_ColumnVarNameInTable="columnDeviceDescription" msprop:Generator_ColumnPropNameInTable="DeviceDescriptionColumn" msprop:Generator_UserColumnName="DeviceDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="IsExempt" msprop:Generator_ColumnVarNameInTable="columnIsExempt" msprop:Generator_ColumnPropNameInRow="IsExempt" msprop:Generator_ColumnPropNameInTable="IsExemptColumn" msprop:Generator_UserColumnName="IsExempt" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsNamingDevice" msprop:Generator_ColumnVarNameInTable="columnIsNamingDevice" msprop:Generator_ColumnPropNameInRow="IsNamingDevice" msprop:Generator_ColumnPropNameInTable="IsNamingDeviceColumn" msprop:Generator_UserColumnName="IsNamingDevice" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsOffpermit" msprop:Generator_ColumnVarNameInTable="columnIsOffpermit" msprop:Generator_ColumnPropNameInRow="IsOffpermit" msprop:Generator_ColumnPropNameInTable="IsOffpermitColumn" msprop:Generator_UserColumnName="IsOffpermit" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsNotInService" msprop:Generator_ColumnVarNameInTable="columnIsNotInService" msprop:Generator_ColumnPropNameInRow="IsNotInService" msprop:Generator_ColumnPropNameInTable="IsNotInServiceColumn" msprop:Generator_UserColumnName="IsNotInService" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsPart70Insignificant" msprop:Generator_ColumnVarNameInTable="columnIsPart70Insignificant" msprop:Generator_ColumnPropNameInRow="IsPart70Insignificant" msprop:Generator_ColumnPropNameInTable="IsPart70InsignificantColumn" msprop:Generator_UserColumnName="IsPart70Insignificant" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DeviceSpecificType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DeviceSpecificType" msprop:Generator_ColumnVarNameInTable="columnDeviceSpecificType" msprop:Generator_ColumnPropNameInTable="DeviceSpecificTypeColumn" msprop:Generator_UserColumnName="DeviceSpecificType" type="xs:string" minOccurs="0" />
+              <xs:element name="RatedHeatInputUnits" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="RatedHeatInputUnits" msprop:Generator_ColumnVarNameInTable="columnRatedHeatInputUnits" msprop:Generator_ColumnPropNameInTable="RatedHeatInputUnitsColumn" msprop:Generator_UserColumnName="RatedHeatInputUnits" type="xs:string" minOccurs="0" />
+              <xs:element name="BSFCUnits" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BSFCUnits" msprop:Generator_ColumnVarNameInTable="columnBSFCUnits" msprop:Generator_ColumnPropNameInTable="BSFCUnitsColumn" msprop:Generator_UserColumnName="BSFCUnits" type="xs:string" minOccurs="0" />
+              <xs:element name="PhysicalSizeUnits" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PhysicalSizeUnits" msprop:Generator_ColumnVarNameInTable="columnPhysicalSizeUnits" msprop:Generator_ColumnPropNameInTable="PhysicalSizeUnitsColumn" msprop:Generator_UserColumnName="PhysicalSizeUnits" type="xs:string" minOccurs="0" />
+              <xs:element name="StationarySourceNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="CompanyNo" msprop:Generator_ColumnVarNameInTable="columnCompanyNo" msprop:Generator_ColumnPropNameInTable="CompanyNoColumn" msprop:Generator_UserColumnName="CompanyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocumentType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DocumentType" msprop:Generator_ColumnVarNameInTable="columnDocumentType" msprop:Generator_ColumnPropNameInTable="DocumentTypeColumn" msprop:Generator_UserColumnName="DocumentType" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitNumber" msprop:Generator_ColumnVarNameInTable="columnPermitNumber" msprop:Generator_ColumnPropNameInTable="PermitNumberColumn" msprop:Generator_UserColumnName="PermitNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitSuffix" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitSuffix" msprop:Generator_ColumnVarNameInTable="columnPermitSuffix" msprop:Generator_ColumnPropNameInTable="PermitSuffixColumn" msprop:Generator_UserColumnName="PermitSuffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Permit" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Permit" msprop:Generator_ColumnVarNameInTable="columnPermit" msprop:Generator_ColumnPropNameInTable="PermitColumn" msprop:Generator_UserColumnName="Permit" type="xs:string" minOccurs="0" />
+              <xs:element name="DeviceType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DeviceType" msprop:Generator_ColumnVarNameInTable="columnDeviceType" msprop:Generator_ColumnPropNameInTable="DeviceTypeColumn" msprop:Generator_UserColumnName="DeviceType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SourceFaciltiyPermit" msprop:Generator_UserTableName="SourceFaciltiyPermit" msprop:Generator_RowEvArgName="SourceFaciltiyPermitRowChangeEvent" msprop:Generator_TableVarName="tableSourceFaciltiyPermit" msprop:Generator_TablePropName="SourceFaciltiyPermit" msprop:Generator_RowDeletingName="SourceFaciltiyPermitRowDeleting" msprop:Generator_RowChangingName="SourceFaciltiyPermitRowChanging" msprop:Generator_RowDeletedName="SourceFaciltiyPermitRowDeleted" msprop:Generator_RowEvHandlerName="SourceFaciltiyPermitRowChangeEventHandler" msprop:Generator_TableClassName="SourceFaciltiyPermitDataTable" msprop:Generator_RowChangedName="SourceFaciltiyPermitRowChanged" msprop:Generator_RowClassName="SourceFaciltiyPermitRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationarySourceNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StationarySourceName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceName" msprop:Generator_ColumnVarNameInTable="columnStationarySourceName" msprop:Generator_ColumnPropNameInTable="StationarySourceNameColumn" msprop:Generator_UserColumnName="StationarySourceName" type="xs:string" minOccurs="0" />
+              <xs:element name="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityName" msprop:Generator_ColumnVarNameInTable="columnFacilityName" msprop:Generator_ColumnPropNameInTable="FacilityNameColumn" msprop:Generator_UserColumnName="FacilityName" type="xs:string" />
+              <xs:element name="PermitNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Permit" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Permit" msprop:Generator_ColumnVarNameInTable="columnPermit" msprop:Generator_ColumnPropNameInTable="PermitColumn" msprop:Generator_UserColumnName="Permit" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DeviceList" />
+      <xs:field xpath="mstns:PermitNoDeviceNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

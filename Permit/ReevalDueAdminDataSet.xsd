@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReevalDueAdminDataSet" targetNamespace="http://tempuri.org/ReevalDueAdminDataSet.xsd" xmlns:mstns="http://tempuri.org/ReevalDueAdminDataSet.xsd" xmlns="http://tempuri.org/ReevalDueAdminDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Permit.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Permit.Properties.Settings.GlobalReference.Default.PSAConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReevalDueAdminDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReevalDueAdminDataSet" msprop:Generator_UserDSName="ReevalDueAdminDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PermitReevalDue" msprop:Generator_UserTableName="PermitReevalDue" msprop:Generator_RowEvArgName="PermitReevalDueRowChangeEvent" msprop:Generator_TableVarName="tablePermitReevalDue" msprop:Generator_TablePropName="PermitReevalDue" msprop:Generator_RowDeletingName="PermitReevalDueRowDeleting" msprop:Generator_RowChangingName="PermitReevalDueRowChanging" msprop:Generator_RowDeletedName="PermitReevalDueRowDeleted" msprop:Generator_RowEvHandlerName="PermitReevalDueRowChangeEventHandler" msprop:Generator_TableClassName="PermitReevalDueDataTable" msprop:Generator_RowChangedName="PermitReevalDueRowChanged" msprop:Generator_RowClassName="PermitReevalDueRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SupervisorLoginID" msprop:Generator_ColumnVarNameInTable="columnSupervisorLoginID" msprop:Generator_ColumnPropNameInRow="SupervisorLoginID" msprop:Generator_ColumnPropNameInTable="SupervisorLoginIDColumn" msprop:Generator_UserColumnName="SupervisorLoginID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EngineerEmployeeID" msprop:Generator_ColumnVarNameInTable="columnEngineerEmployeeID" msprop:Generator_ColumnPropNameInRow="EngineerEmployeeID" msprop:Generator_ColumnPropNameInTable="EngineerEmployeeIDColumn" msprop:Generator_UserColumnName="EngineerEmployeeID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DueForReevalQtr" msprop:Generator_ColumnVarNameInTable="columnDueForReevalQtr" msprop:Generator_ColumnPropNameInRow="DueForReevalQtr" msprop:Generator_ColumnPropNameInTable="DueForReevalQtrColumn" msprop:Generator_UserColumnName="DueForReevalQtr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DirectFinalPermit" msprop:Generator_ColumnVarNameInTable="columnDirectFinalPermit" msprop:Generator_ColumnPropNameInRow="DirectFinalPermit" msprop:Generator_ColumnPropNameInTable="DirectFinalPermitColumn" msprop:Generator_UserColumnName="DirectFinalPermit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StampedIssuance" msprop:Generator_ColumnVarNameInTable="columnStampedIssuance" msprop:Generator_ColumnPropNameInRow="StampedIssuance" msprop:Generator_ColumnPropNameInTable="StampedIssuanceColumn" msprop:Generator_UserColumnName="StampedIssuance" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EpaSourceSize" msprop:Generator_ColumnVarNameInTable="columnEpaSourceSize" msprop:Generator_ColumnPropNameInRow="EpaSourceSize" msprop:Generator_ColumnPropNameInTable="EpaSourceSizeColumn" msprop:Generator_UserColumnName="EpaSourceSize" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SSID" msprop:Generator_ColumnVarNameInTable="columnSSID" msprop:Generator_ColumnPropNameInRow="SSID" msprop:Generator_ColumnPropNameInTable="SSIDColumn" msprop:Generator_UserColumnName="SSID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FID" msprop:Generator_ColumnVarNameInTable="columnFID" msprop:Generator_ColumnPropNameInRow="FID" msprop:Generator_ColumnPropNameInTable="FIDColumn" msprop:Generator_UserColumnName="FID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StationarySourceName" msprop:Generator_ColumnVarNameInTable="columnStationarySourceName" msprop:Generator_ColumnPropNameInRow="StationarySourceName" msprop:Generator_ColumnPropNameInTable="StationarySourceNameColumn" msprop:Generator_UserColumnName="StationarySourceName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StationarySourceType" msprop:Generator_ColumnVarNameInTable="columnStationarySourceType" msprop:Generator_ColumnPropNameInRow="StationarySourceType" msprop:Generator_ColumnPropNameInTable="StationarySourceTypeColumn" msprop:Generator_UserColumnName="StationarySourceType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityName" msprop:Generator_ColumnVarNameInTable="columnFacilityName" msprop:Generator_ColumnPropNameInRow="FacilityName" msprop:Generator_ColumnPropNameInTable="FacilityNameColumn" msprop:Generator_UserColumnName="FacilityName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitType" msprop:Generator_ColumnVarNameInTable="columnPermitType" msprop:Generator_ColumnPropNameInRow="PermitType" msprop:Generator_ColumnPropNameInTable="PermitTypeColumn" msprop:Generator_UserColumnName="PermitType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocumentType" msprop:Generator_ColumnVarNameInTable="columnDocumentType" msprop:Generator_ColumnPropNameInRow="DocumentType" msprop:Generator_ColumnPropNameInTable="DocumentTypeColumn" msprop:Generator_UserColumnName="DocumentType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitNumber" msprop:Generator_ColumnVarNameInTable="columnPermitNumber" msprop:Generator_ColumnPropNameInRow="PermitNumber" msprop:Generator_ColumnPropNameInTable="PermitNumberColumn" msprop:Generator_UserColumnName="PermitNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitSuffix" msprop:Generator_ColumnVarNameInTable="columnPermitSuffix" msprop:Generator_ColumnPropNameInRow="PermitSuffix" msprop:Generator_ColumnPropNameInTable="PermitSuffixColumn" msprop:Generator_UserColumnName="PermitSuffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewPermitNo" msprop:Generator_ColumnVarNameInTable="columnNewPermitNo" msprop:Generator_ColumnPropNameInRow="NewPermitNo" msprop:Generator_ColumnPropNameInTable="NewPermitNoColumn" msprop:Generator_UserColumnName="NewPermitNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewDocumentType" msprop:Generator_ColumnVarNameInTable="columnNewDocumentType" msprop:Generator_ColumnPropNameInRow="NewDocumentType" msprop:Generator_ColumnPropNameInTable="NewDocumentTypeColumn" msprop:Generator_UserColumnName="NewDocumentType" type="xs:string" minOccurs="0" />
+              <xs:element name="NewPermitNumber" msprop:Generator_ColumnVarNameInTable="columnNewPermitNumber" msprop:Generator_ColumnPropNameInRow="NewPermitNumber" msprop:Generator_ColumnPropNameInTable="NewPermitNumberColumn" msprop:Generator_UserColumnName="NewPermitNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewPermitSuffix" msprop:Generator_ColumnVarNameInTable="columnNewPermitSuffix" msprop:Generator_ColumnPropNameInRow="NewPermitSuffix" msprop:Generator_ColumnPropNameInTable="NewPermitSuffixColumn" msprop:Generator_UserColumnName="NewPermitSuffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DueForReevalDate" msprop:Generator_ColumnVarNameInTable="columnDueForReevalDate" msprop:Generator_ColumnPropNameInRow="DueForReevalDate" msprop:Generator_ColumnPropNameInTable="DueForReevalDateColumn" msprop:Generator_UserColumnName="DueForReevalDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewPermitDraftIssuedDate" msprop:Generator_ColumnVarNameInTable="columnNewPermitDraftIssuedDate" msprop:Generator_ColumnPropNameInRow="NewPermitDraftIssuedDate" msprop:Generator_ColumnPropNameInTable="NewPermitDraftIssuedDateColumn" msprop:Generator_UserColumnName="NewPermitDraftIssuedDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewPermitFinalIssuedDate" msprop:Generator_ColumnVarNameInTable="columnNewPermitFinalIssuedDate" msprop:Generator_ColumnPropNameInRow="NewPermitFinalIssuedDate" msprop:Generator_ColumnPropNameInTable="NewPermitFinalIssuedDateColumn" msprop:Generator_UserColumnName="NewPermitFinalIssuedDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActualReevalFee" msprop:Generator_ColumnVarNameInTable="columnActualReevalFee" msprop:Generator_ColumnPropNameInRow="ActualReevalFee" msprop:Generator_ColumnPropNameInTable="ActualReevalFeeColumn" msprop:Generator_UserColumnName="ActualReevalFee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BudgetedReevalFee" msprop:Generator_ColumnVarNameInTable="columnBudgetedReevalFee" msprop:Generator_ColumnPropNameInRow="BudgetedReevalFee" msprop:Generator_ColumnPropNameInTable="BudgetedReevalFeeColumn" msprop:Generator_UserColumnName="BudgetedReevalFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PermitFeeAction" msprop:Generator_ColumnVarNameInTable="columnPermitFeeAction" msprop:Generator_ColumnPropNameInRow="PermitFeeAction" msprop:Generator_ColumnPropNameInTable="PermitFeeActionColumn" msprop:Generator_UserColumnName="PermitFeeAction" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsReimbursable" msprop:Generator_ColumnVarNameInTable="columnIsReimbursable" msprop:Generator_ColumnPropNameInRow="IsReimbursable" msprop:Generator_ColumnPropNameInTable="IsReimbursableColumn" msprop:Generator_UserColumnName="IsReimbursable" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HasReevalAssignmentPermit" msprop:Generator_ColumnVarNameInTable="columnHasReevalAssignmentPermit" msprop:Generator_ColumnPropNameInRow="HasReevalAssignmentPermit" msprop:Generator_ColumnPropNameInTable="HasReevalAssignmentPermitColumn" msprop:Generator_UserColumnName="HasReevalAssignmentPermit" type="xs:boolean" minOccurs="0" />
+              <xs:element name="HasPdePermit" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="HasPdePermit" msprop:Generator_ColumnVarNameInTable="columnHasPdePermit" msprop:Generator_ColumnPropNameInTable="HasPdePermitColumn" msprop:Generator_UserColumnName="HasPdePermit" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsDirectFinalPermit" msprop:Generator_ColumnVarNameInTable="columnIsDirectFinalPermit" msprop:Generator_ColumnPropNameInRow="IsDirectFinalPermit" msprop:Generator_ColumnPropNameInTable="IsDirectFinalPermitColumn" msprop:Generator_UserColumnName="IsDirectFinalPermit" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ReevalDueDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnReevalDueDate" msprop:Generator_ColumnPropNameInRow="ReevalDueDate" msprop:Generator_ColumnPropNameInTable="ReevalDueDateColumn" msprop:Generator_UserColumnName="ReevalDueDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ReevalNotNeeded" msprop:Generator_ColumnVarNameInTable="columnReevalNotNeeded" msprop:Generator_ColumnPropNameInRow="ReevalNotNeeded" msprop:Generator_ColumnPropNameInTable="ReevalNotNeededColumn" msprop:Generator_UserColumnName="ReevalNotNeeded" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsStampedIssuance" msprop:Generator_ColumnVarNameInTable="columnIsStampedIssuance" msprop:Generator_ColumnPropNameInRow="IsStampedIssuance" msprop:Generator_ColumnPropNameInTable="IsStampedIssuanceColumn" msprop:Generator_UserColumnName="IsStampedIssuance" type="xs:boolean" default="false" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Employee" msprop:Generator_UserTableName="Employee" msprop:Generator_RowEvArgName="EmployeeRowChangeEvent" msprop:Generator_TableVarName="tableEmployee" msprop:Generator_TablePropName="Employee" msprop:Generator_RowDeletingName="EmployeeRowDeleting" msprop:Generator_RowChangingName="EmployeeRowChanging" msprop:Generator_RowDeletedName="EmployeeRowDeleted" msprop:Generator_RowEvHandlerName="EmployeeRowChangeEventHandler" msprop:Generator_TableClassName="EmployeeDataTable" msprop:Generator_RowChangedName="EmployeeRowChanged" msprop:Generator_RowClassName="EmployeeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LoginID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LoginID" msprop:Generator_ColumnVarNameInTable="columnLoginID" msprop:Generator_ColumnPropNameInTable="LoginIDColumn" msprop:Generator_UserColumnName="LoginID" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployeeID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployeeName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="MiddleName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MiddleName" msprop:Generator_ColumnVarNameInTable="columnMiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" msprop:Generator_UserColumnName="MiddleName" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReevalAssignmentLabel" msprop:Generator_TableClassName="ReevalAssignmentLabelDataTable" msprop:Generator_TableVarName="tableReevalAssignmentLabel" msprop:Generator_RowChangedName="ReevalAssignmentLabelRowChanged" msprop:Generator_TablePropName="ReevalAssignmentLabel" msprop:Generator_RowDeletingName="ReevalAssignmentLabelRowDeleting" msprop:Generator_RowChangingName="ReevalAssignmentLabelRowChanging" msprop:Generator_RowEvHandlerName="ReevalAssignmentLabelRowChangeEventHandler" msprop:Generator_RowDeletedName="ReevalAssignmentLabelRowDeleted" msprop:Generator_RowClassName="ReevalAssignmentLabelRow" msprop:Generator_UserTableName="ReevalAssignmentLabel" msprop:Generator_RowEvArgName="ReevalAssignmentLabelRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReevalAssignmentLabeId" msprop:Generator_ColumnVarNameInTable="columnReevalAssignmentLabeId" msprop:Generator_ColumnPropNameInRow="ReevalAssignmentLabeId" msprop:Generator_ColumnPropNameInTable="ReevalAssignmentLabeIdColumn" msprop:Generator_UserColumnName="ReevalAssignmentLabeId" type="xs:int" />
+              <xs:element name="ReevalAssignmentLabelName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ReevalAssignmentLabelName" msprop:Generator_ColumnVarNameInTable="columnReevalAssignmentLabelName" msprop:Generator_ColumnPropNameInTable="ReevalAssignmentLabelNameColumn" msprop:Generator_UserColumnName="ReevalAssignmentLabelName" type="xs:string" minOccurs="0" />
+              <xs:element name="ReevalAssignmentLabelDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ReevalAssignmentLabelDescription" msprop:Generator_ColumnVarNameInTable="columnReevalAssignmentLabelDescription" msprop:Generator_ColumnPropNameInTable="ReevalAssignmentLabelDescriptionColumn" msprop:Generator_UserColumnName="ReevalAssignmentLabelDescription" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PermitReevalDue" />
+      <xs:field xpath="mstns:PermitNo" />
+    </xs:unique>
+    <xs:unique name="Employee_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Employee" />
+      <xs:field xpath="mstns:EmployeeID" />
+    </xs:unique>
+    <xs:unique name="ReevalAssignmentLabel_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ReevalAssignmentLabel" />
+      <xs:field xpath="mstns:ReevalAssignmentLabeId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

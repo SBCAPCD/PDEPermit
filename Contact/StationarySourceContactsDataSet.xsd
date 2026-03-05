@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StationarySourceContactsDataSet" targetNamespace="http://tempuri.org/StationarySourceContactsDataSet.xsd" xmlns:mstns="http://tempuri.org/StationarySourceContactsDataSet.xsd" xmlns="http://tempuri.org/StationarySourceContactsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.Contact.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StationarySourceContactsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="StationarySourceContactsDataSet" msprop:Generator_UserDSName="StationarySourceContactsDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Contacts" msprop:Generator_UserTableName="Contacts" msprop:Generator_RowDeletedName="ContactsRowDeleted" msprop:Generator_TableClassName="ContactsDataTable" msprop:Generator_RowChangedName="ContactsRowChanged" msprop:Generator_RowClassName="ContactsRow" msprop:Generator_RowChangingName="ContactsRowChanging" msprop:Generator_RowEvArgName="ContactsRowChangeEvent" msprop:Generator_RowEvHandlerName="ContactsRowChangeEventHandler" msprop:Generator_TablePropName="Contacts" msprop:Generator_TableVarName="tableContacts" msprop:Generator_RowDeletingName="ContactsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContactTypeId" msprop:Generator_UserColumnName="ContactTypeId" msprop:Generator_ColumnPropNameInRow="ContactTypeId" msprop:Generator_ColumnVarNameInTable="columnContactTypeId" msprop:Generator_ColumnPropNameInTable="ContactTypeIdColumn" type="xs:int" />
+              <xs:element name="ContactId" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ContactId" msprop:Generator_ColumnPropNameInRow="ContactId" msprop:Generator_ColumnVarNameInTable="columnContactId" msprop:Generator_ColumnPropNameInTable="ContactIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StationarySourceNo" msprop:Generator_UserColumnName="StationarySourceNo" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FacilityNo" msprop:Generator_UserColumnName="FacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" type="xs:string" />
+              <xs:element name="FacilityName" msprop:Generator_UserColumnName="FacilityName" msprop:Generator_ColumnPropNameInRow="FacilityName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnFacilityName" msprop:Generator_ColumnPropNameInTable="FacilityNameColumn" type="xs:string" />
+              <xs:element name="StreetAddressComplete" msdata:ReadOnly="true" msprop:Generator_UserColumnName="StreetAddressComplete" msprop:Generator_ColumnPropNameInRow="StreetAddressComplete" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnStreetAddressComplete" msprop:Generator_ColumnPropNameInTable="StreetAddressCompleteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CityStateZip" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CityStateZip" msprop:Generator_ColumnPropNameInRow="CityStateZip" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCityStateZip" msprop:Generator_ColumnPropNameInTable="CityStateZipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactDesc" msprop:Generator_UserColumnName="ContactDesc" msprop:Generator_ColumnPropNameInRow="ContactDesc" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnContactDesc" msprop:Generator_ColumnPropNameInTable="ContactDescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" type="xs:string" />
+              <xs:element name="FirstLastName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="FirstLastName" msprop:Generator_ColumnPropNameInRow="FirstLastName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnFirstLastName" msprop:Generator_ColumnPropNameInTable="FirstLastNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompleteName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="CompleteName" msprop:Generator_ColumnPropNameInRow="CompleteName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCompleteName" msprop:Generator_ColumnPropNameInTable="CompleteNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactDisplay" msprop:Generator_UserColumnName="ContactDisplay" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnContactDisplay" msprop:Generator_ColumnPropNameInTable="ContactDisplayColumn" msprop:Generator_ColumnPropNameInRow="ContactDisplay" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StationarySourceContacts" msprop:Generator_UserTableName="StationarySourceContacts" msprop:Generator_RowDeletedName="StationarySourceContactsRowDeleted" msprop:Generator_TableClassName="StationarySourceContactsDataTable" msprop:Generator_RowChangedName="StationarySourceContactsRowChanged" msprop:Generator_RowClassName="StationarySourceContactsRow" msprop:Generator_RowChangingName="StationarySourceContactsRowChanging" msprop:Generator_RowEvArgName="StationarySourceContactsRowChangeEvent" msprop:Generator_RowEvHandlerName="StationarySourceContactsRowChangeEventHandler" msprop:Generator_TablePropName="StationarySourceContacts" msprop:Generator_TableVarName="tableStationarySourceContacts" msprop:Generator_RowDeletingName="StationarySourceContactsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationarySourceNo" msprop:Generator_UserColumnName="StationarySourceNo" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BillingContactId" msprop:Generator_UserColumnName="BillingContactId" msprop:Generator_ColumnPropNameInRow="BillingContactId" msprop:Generator_ColumnVarNameInTable="columnBillingContactId" msprop:Generator_ColumnPropNameInTable="BillingContactIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CorrespondenceContactId" msprop:Generator_UserColumnName="CorrespondenceContactId" msprop:Generator_ColumnPropNameInRow="CorrespondenceContactId" msprop:Generator_ColumnVarNameInTable="columnCorrespondenceContactId" msprop:Generator_ColumnPropNameInTable="CorrespondenceContactIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StationarySourceName" msprop:Generator_UserColumnName="StationarySourceName" msprop:Generator_ColumnPropNameInRow="StationarySourceName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnStationarySourceName" msprop:Generator_ColumnPropNameInTable="StationarySourceNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StationarySourceContacts" />
+      <xs:field xpath="mstns:StationarySourceNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

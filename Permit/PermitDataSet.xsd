@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PermitDataSet" targetNamespace="http://tempuri.org/PermitDataSet.xsd" xmlns:mstns="http://tempuri.org/PermitDataSet.xsd" xmlns="http://tempuri.org/PermitDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Permit.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PermitDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PermitDataSet" msprop:Generator_UserDSName="PermitDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Permit" msprop:Generator_UserTableName="Permit" msprop:Generator_RowEvArgName="PermitRowChangeEvent" msprop:Generator_TableVarName="tablePermit" msprop:Generator_TablePropName="Permit" msprop:Generator_RowDeletingName="PermitRowDeleting" msprop:Generator_RowChangingName="PermitRowChanging" msprop:Generator_RowDeletedName="PermitRowDeleted" msprop:Generator_RowEvHandlerName="PermitRowChangeEventHandler" msprop:Generator_TableClassName="PermitDataTable" msprop:Generator_RowChangedName="PermitRowChanged" msprop:Generator_RowClassName="PermitRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocumentType" msprop:Generator_ColumnVarNameInTable="columnDocumentType" msprop:Generator_ColumnPropNameInRow="DocumentType" msprop:Generator_ColumnPropNameInTable="DocumentTypeColumn" msprop:Generator_UserColumnName="DocumentType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitNumber" msprop:Generator_ColumnVarNameInTable="columnPermitNumber" msprop:Generator_ColumnPropNameInRow="PermitNumber" msprop:Generator_ColumnPropNameInTable="PermitNumberColumn" msprop:Generator_UserColumnName="PermitNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitSuffix" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitSuffix" msprop:Generator_ColumnVarNameInTable="columnPermitSuffix" msprop:Generator_ColumnPropNameInTable="PermitSuffixColumn" msprop:Generator_UserColumnName="PermitSuffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitNotes" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="PermitNotes" msprop:Generator_ColumnVarNameInTable="columnPermitNotes" msprop:Generator_ColumnPropNameInTable="PermitNotesColumn" msprop:Generator_UserColumnName="PermitNotes" type="xs:string" minOccurs="0" />
+              <xs:element name="IsReimbursable" msprop:Generator_ColumnVarNameInTable="columnIsReimbursable" msprop:Generator_ColumnPropNameInRow="IsReimbursable" msprop:Generator_ColumnPropNameInTable="IsReimbursableColumn" msprop:Generator_UserColumnName="IsReimbursable" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsPermitPriority" msprop:Generator_ColumnVarNameInTable="columnIsPermitPriority" msprop:Generator_ColumnPropNameInRow="IsPermitPriority" msprop:Generator_ColumnPropNameInTable="IsPermitPriorityColumn" msprop:Generator_UserColumnName="IsPermitPriority" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="EmployeeIdNo" msprop:Generator_ColumnVarNameInTable="columnEmployeeIdNo" msprop:Generator_ColumnPropNameInRow="EmployeeIdNo" msprop:Generator_ColumnPropNameInTable="EmployeeIdNoColumn" msprop:Generator_UserColumnName="EmployeeIdNo" default="0" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitStatus" msprop:Generator_ColumnVarNameInTable="columnPermitStatus" msprop:Generator_ColumnPropNameInRow="PermitStatus" msprop:Generator_ColumnPropNameInTable="PermitStatusColumn" msprop:Generator_UserColumnName="PermitStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitTypeId" msprop:Generator_ColumnVarNameInTable="columnPermitTypeId" msprop:Generator_ColumnPropNameInRow="PermitTypeId" msprop:Generator_ColumnPropNameInTable="PermitTypeIdColumn" msprop:Generator_UserColumnName="PermitTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="PermitDesc" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="PermitDesc" msprop:Generator_ColumnVarNameInTable="columnPermitDesc" msprop:Generator_ColumnPropNameInTable="PermitDescColumn" msprop:Generator_UserColumnName="PermitDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationNo" msprop:Generator_ColumnVarNameInTable="columnLocationNo" msprop:Generator_ColumnPropNameInRow="LocationNo" msprop:Generator_ColumnPropNameInTable="LocationNoColumn" msprop:Generator_UserColumnName="LocationNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LeadAgencyNo" msprop:Generator_ColumnVarNameInTable="columnLeadAgencyNo" msprop:Generator_ColumnPropNameInRow="LeadAgencyNo" msprop:Generator_ColumnPropNameInTable="LeadAgencyNoColumn" msprop:Generator_UserColumnName="LeadAgencyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsConsolidatedPermit" msprop:Generator_ColumnVarNameInTable="columnIsConsolidatedPermit" msprop:Generator_ColumnPropNameInRow="IsConsolidatedPermit" msprop:Generator_ColumnPropNameInTable="IsConsolidatedPermitColumn" msprop:Generator_UserColumnName="IsConsolidatedPermit" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="VafbContactFacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="VafbContactFacilityNo" msprop:Generator_ColumnVarNameInTable="columnVafbContactFacilityNo" msprop:Generator_ColumnPropNameInTable="VafbContactFacilityNoColumn" msprop:Generator_UserColumnName="VafbContactFacilityNo" type="xs:string" minOccurs="0" />
+              <xs:element name="StationarySourceNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="CompanyNo" msprop:Generator_ColumnVarNameInTable="columnCompanyNo" msprop:Generator_ColumnPropNameInTable="CompanyNoColumn" msprop:Generator_UserColumnName="CompanyNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Permit" msprop:Generator_ColumnVarNameInTable="columnPermit" msprop:Generator_ColumnPropNameInRow="Permit" msprop:Generator_ColumnPropNameInTable="PermitColumn" msprop:Generator_UserColumnName="Permit" type="xs:string" minOccurs="0" />
+              <xs:element name="IsConfidential" msprop:Generator_ColumnVarNameInTable="columnIsConfidential" msprop:Generator_ColumnPropNameInRow="IsConfidential" msprop:Generator_ColumnPropNameInTable="IsConfidentialColumn" msprop:Generator_UserColumnName="IsConfidential" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="AtVariousLocations" msprop:Generator_ColumnVarNameInTable="columnAtVariousLocations" msprop:Generator_ColumnPropNameInRow="AtVariousLocations" msprop:Generator_ColumnPropNameInTable="AtVariousLocationsColumn" msprop:Generator_UserColumnName="AtVariousLocations" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsFastTrack" msprop:Generator_ColumnVarNameInTable="columnIsFastTrack" msprop:Generator_ColumnPropNameInRow="IsFastTrack" msprop:Generator_ColumnPropNameInTable="IsFastTrackColumn" msprop:Generator_UserColumnName="IsFastTrack" type="xs:boolean" default="false" />
+              <xs:element name="IncrementConsumed" msprop:Generator_ColumnVarNameInTable="columnIncrementConsumed" msprop:Generator_ColumnPropNameInRow="IncrementConsumed" msprop:Generator_ColumnPropNameInTable="IncrementConsumedColumn" msprop:Generator_UserColumnName="IncrementConsumed" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="HasHealthRiskAssessment" msprop:Generator_ColumnVarNameInTable="columnHasHealthRiskAssessment" msprop:Generator_ColumnPropNameInRow="HasHealthRiskAssessment" msprop:Generator_ColumnPropNameInTable="HasHealthRiskAssessmentColumn" msprop:Generator_UserColumnName="HasHealthRiskAssessment" type="xs:boolean" default="false" />
+              <xs:element name="HasAqia" msprop:Generator_ColumnVarNameInTable="columnHasAqia" msprop:Generator_ColumnPropNameInRow="HasAqia" msprop:Generator_ColumnPropNameInTable="HasAqiaColumn" msprop:Generator_UserColumnName="HasAqia" type="xs:boolean" default="false" />
+              <xs:element name="HasBact" msprop:Generator_ColumnVarNameInTable="columnHasBact" msprop:Generator_ColumnPropNameInRow="HasBact" msprop:Generator_ColumnPropNameInTable="HasBactColumn" msprop:Generator_UserColumnName="HasBact" type="xs:boolean" default="false" />
+              <xs:element name="HasMonitoring" msprop:Generator_ColumnVarNameInTable="columnHasMonitoring" msprop:Generator_ColumnPropNameInRow="HasMonitoring" msprop:Generator_ColumnPropNameInTable="HasMonitoringColumn" msprop:Generator_UserColumnName="HasMonitoring" type="xs:boolean" default="false" />
+              <xs:element name="HasSourceTest" msprop:Generator_ColumnVarNameInTable="columnHasSourceTest" msprop:Generator_ColumnPropNameInRow="HasSourceTest" msprop:Generator_ColumnPropNameInTable="HasSourceTestColumn" msprop:Generator_UserColumnName="HasSourceTest" type="xs:boolean" default="false" />
+              <xs:element name="IsMajorModification" msprop:Generator_ColumnVarNameInTable="columnIsMajorModification" msprop:Generator_ColumnPropNameInRow="IsMajorModification" msprop:Generator_ColumnPropNameInTable="IsMajorModificationColumn" msprop:Generator_UserColumnName="IsMajorModification" type="xs:boolean" default="false" />
+              <xs:element name="HasNeiDDecrease" msprop:Generator_ColumnVarNameInTable="columnHasNeiDDecrease" msprop:Generator_ColumnPropNameInRow="HasNeiDDecrease" msprop:Generator_ColumnPropNameInTable="HasNeiDDecreaseColumn" msprop:Generator_UserColumnName="HasNeiDDecrease" type="xs:boolean" default="false" />
+              <xs:element name="HasNeiP2Decrease" msprop:Generator_ColumnVarNameInTable="columnHasNeiP2Decrease" msprop:Generator_ColumnPropNameInRow="HasNeiP2Decrease" msprop:Generator_ColumnPropNameInTable="HasNeiP2DecreaseColumn" msprop:Generator_UserColumnName="HasNeiP2Decrease" type="xs:boolean" default="false" />
+              <xs:element name="HasPSAPermit" msprop:Generator_ColumnVarNameInTable="columnHasPSAPermit" msprop:Generator_ColumnPropNameInRow="HasPSAPermit" msprop:Generator_ColumnPropNameInTable="HasPSAPermitColumn" msprop:Generator_UserColumnName="HasPSAPermit" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="FinalPermitPath" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FinalPermitPath" msprop:Generator_ColumnVarNameInTable="columnFinalPermitPath" msprop:Generator_ColumnPropNameInTable="FinalPermitPathColumn" msprop:Generator_UserColumnName="FinalPermitPath" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitFolderPath" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitFolderPath" msprop:Generator_ColumnVarNameInTable="columnPermitFolderPath" msprop:Generator_ColumnPropNameInTable="PermitFolderPathColumn" msprop:Generator_UserColumnName="PermitFolderPath" type="xs:string" minOccurs="0" />
+              <xs:element name="IsPrimaryReevalPermit" msprop:Generator_ColumnVarNameInTable="columnIsPrimaryReevalPermit" msprop:Generator_ColumnPropNameInRow="IsPrimaryReevalPermit" msprop:Generator_ColumnPropNameInTable="IsPrimaryReevalPermitColumn" msprop:Generator_UserColumnName="IsPrimaryReevalPermit" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsDirectFinalPermit" msprop:Generator_ColumnVarNameInTable="columnIsDirectFinalPermit" msprop:Generator_ColumnPropNameInRow="IsDirectFinalPermit" msprop:Generator_ColumnPropNameInTable="IsDirectFinalPermitColumn" msprop:Generator_UserColumnName="IsDirectFinalPermit" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="RequiresAnnualReport" msprop:Generator_ColumnVarNameInTable="columnRequiresAnnualReport" msprop:Generator_ColumnPropNameInRow="RequiresAnnualReport" msprop:Generator_ColumnPropNameInTable="RequiresAnnualReportColumn" msprop:Generator_UserColumnName="RequiresAnnualReport" type="xs:string" default="False" minOccurs="0" />
+              <xs:element name="RoutingSlipSentDate" msprop:Generator_ColumnVarNameInTable="columnRoutingSlipSentDate" msprop:Generator_ColumnPropNameInRow="RoutingSlipSentDate" msprop:Generator_ColumnPropNameInTable="RoutingSlipSentDateColumn" msprop:Generator_UserColumnName="RoutingSlipSentDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsStampedIssuance" msprop:Generator_ColumnVarNameInTable="columnIsStampedIssuance" msprop:Generator_ColumnPropNameInRow="IsStampedIssuance" msprop:Generator_ColumnPropNameInTable="IsStampedIssuanceColumn" msprop:Generator_UserColumnName="IsStampedIssuance" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="RoutingSlipCompletenessSentDate" msprop:Generator_ColumnVarNameInTable="columnRoutingSlipCompletenessSentDate" msprop:Generator_ColumnPropNameInRow="RoutingSlipCompletenessSentDate" msprop:Generator_ColumnPropNameInTable="RoutingSlipCompletenessSentDateColumn" msprop:Generator_UserColumnName="RoutingSlipCompletenessSentDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CompletenessEmployeeNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="CompletenessEmployeeNo" msprop:Generator_ColumnVarNameInTable="columnCompletenessEmployeeNo" msprop:Generator_ColumnPropNameInTable="CompletenessEmployeeNoColumn" msprop:Generator_UserColumnName="CompletenessEmployeeNo" type="xs:string" default="0" minOccurs="0" />
+              <xs:element name="ApplicationPath" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ApplicationPath" msprop:Generator_ColumnVarNameInTable="columnApplicationPath" msprop:Generator_ColumnPropNameInTable="ApplicationPathColumn" msprop:Generator_UserColumnName="ApplicationPath" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitProcessDelay" msprop:Generator_ColumnVarNameInTable="columnPermitProcessDelay" msprop:Generator_ColumnPropNameInRow="PermitProcessDelay" msprop:Generator_ColumnPropNameInTable="PermitProcessDelayColumn" msprop:Generator_UserColumnName="PermitProcessDelay" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="InterimPermitApprovalProcess" msprop:Generator_ColumnVarNameInTable="columnInterimPermitApprovalProcess" msprop:Generator_ColumnPropNameInRow="InterimPermitApprovalProcess" msprop:Generator_ColumnPropNameInTable="InterimPermitApprovalProcessColumn" msprop:Generator_UserColumnName="InterimPermitApprovalProcess" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsCheckedOutForEdit" msprop:Generator_ColumnVarNameInTable="columnIsCheckedOutForEdit" msprop:Generator_ColumnPropNameInRow="IsCheckedOutForEdit" msprop:Generator_ColumnPropNameInTable="IsCheckedOutForEditColumn" msprop:Generator_UserColumnName="IsCheckedOutForEdit" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="RequiresSchoolNotice" msprop:Generator_ColumnVarNameInTable="columnRequiresSchoolNotice" msprop:Generator_ColumnPropNameInRow="RequiresSchoolNotice" msprop:Generator_ColumnPropNameInTable="RequiresSchoolNoticeColumn" msprop:Generator_UserColumnName="RequiresSchoolNotice" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="HighlightSchoolNoticeRequired" msprop:Generator_ColumnVarNameInTable="columnHighlightSchoolNoticeRequired" msprop:Generator_ColumnPropNameInRow="HighlightSchoolNoticeRequired" msprop:Generator_ColumnPropNameInTable="HighlightSchoolNoticeRequiredColumn" msprop:Generator_UserColumnName="HighlightSchoolNoticeRequired" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsMappingPermit" msprop:Generator_ColumnVarNameInTable="columnIsMappingPermit" msprop:Generator_ColumnPropNameInRow="IsMappingPermit" msprop:Generator_ColumnPropNameInTable="IsMappingPermitColumn" msprop:Generator_UserColumnName="IsMappingPermit" type="xs:boolean" default="false" minOccurs="0" />
+              <xs:element name="IsPte25" msprop:Generator_ColumnVarNameInTable="columnIsPte25" msprop:Generator_ColumnPropNameInRow="IsPte25" msprop:Generator_ColumnPropNameInTable="IsPte25Column" msprop:Generator_UserColumnName="IsPte25" type="xs:boolean" default="false" />
+              <xs:element name="ReportingType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ReportingType" msprop:Generator_ColumnVarNameInTable="columnReportingType" msprop:Generator_ColumnPropNameInTable="ReportingTypeColumn" msprop:Generator_UserColumnName="ReportingType" type="xs:string" minOccurs="0" />
+              <xs:element name="HasTemporaryExemption" msprop:Generator_ColumnVarNameInTable="columnHasTemporaryExemption" msprop:Generator_ColumnPropNameInRow="HasTemporaryExemption" msprop:Generator_ColumnPropNameInTable="HasTemporaryExemptionColumn" msprop:Generator_UserColumnName="HasTemporaryExemption" type="xs:boolean" default="false" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PermitProject" msprop:Generator_UserTableName="PermitProject" msprop:Generator_RowEvArgName="PermitProjectRowChangeEvent" msprop:Generator_TableVarName="tablePermitProject" msprop:Generator_TablePropName="PermitProject" msprop:Generator_RowDeletingName="PermitProjectRowDeleting" msprop:Generator_RowChangingName="PermitProjectRowChanging" msprop:Generator_RowDeletedName="PermitProjectRowDeleted" msprop:Generator_RowEvHandlerName="PermitProjectRowChangeEventHandler" msprop:Generator_TableClassName="PermitProjectDataTable" msprop:Generator_RowChangedName="PermitProjectRowChanged" msprop:Generator_RowClassName="PermitProjectRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitProjectId" msprop:Generator_ColumnVarNameInTable="columnPermitProjectId" msprop:Generator_ColumnPropNameInRow="PermitProjectId" msprop:Generator_ColumnPropNameInTable="PermitProjectIdColumn" msprop:Generator_UserColumnName="PermitProjectId" type="xs:int" />
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProjectNo" msprop:Generator_ColumnVarNameInTable="columnProjectNo" msprop:Generator_ColumnPropNameInRow="ProjectNo" msprop:Generator_ColumnPropNameInTable="ProjectNoColumn" msprop:Generator_UserColumnName="ProjectNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsInvoiceProject" msprop:Generator_ColumnVarNameInTable="columnIsInvoiceProject" msprop:Generator_ColumnPropNameInRow="IsInvoiceProject" msprop:Generator_ColumnPropNameInTable="IsInvoiceProjectColumn" msprop:Generator_UserColumnName="IsInvoiceProject" type="xs:boolean" default="false" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PermitEmissions" msprop:Generator_UserTableName="PermitEmissions" msprop:Generator_RowEvArgName="PermitEmissionsRowChangeEvent" msprop:Generator_TableVarName="tablePermitEmissions" msprop:Generator_TablePropName="PermitEmissions" msprop:Generator_RowDeletingName="PermitEmissionsRowDeleting" msprop:Generator_RowChangingName="PermitEmissionsRowChanging" msprop:Generator_RowDeletedName="PermitEmissionsRowDeleted" msprop:Generator_RowEvHandlerName="PermitEmissionsRowChangeEventHandler" msprop:Generator_TableClassName="PermitEmissionsDataTable" msprop:Generator_RowChangedName="PermitEmissionsRowChanged" msprop:Generator_RowClassName="PermitEmissionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmissionsUnits" msprop:Generator_ColumnVarNameInTable="columnEmissionsUnits" msprop:Generator_ColumnPropNameInRow="EmissionsUnits" msprop:Generator_ColumnPropNameInTable="EmissionsUnitsColumn" msprop:Generator_UserColumnName="EmissionsUnits">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmissionsType" msprop:Generator_ColumnVarNameInTable="columnEmissionsType" msprop:Generator_ColumnPropNameInRow="EmissionsType" msprop:Generator_ColumnPropNameInTable="EmissionsTypeColumn" msprop:Generator_UserColumnName="EmissionsType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOx" msprop:Generator_ColumnVarNameInTable="columnNOx" msprop:Generator_ColumnPropNameInRow="NOx" msprop:Generator_ColumnPropNameInTable="NOxColumn" msprop:Generator_UserColumnName="NOx" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ROC" msprop:Generator_ColumnVarNameInTable="columnROC" msprop:Generator_ColumnPropNameInRow="ROC" msprop:Generator_ColumnPropNameInTable="ROCColumn" msprop:Generator_UserColumnName="ROC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CO" msprop:Generator_ColumnVarNameInTable="columnCO" msprop:Generator_ColumnPropNameInRow="CO" msprop:Generator_ColumnPropNameInTable="COColumn" msprop:Generator_UserColumnName="CO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOx" msprop:Generator_ColumnVarNameInTable="columnSOx" msprop:Generator_ColumnPropNameInRow="SOx" msprop:Generator_ColumnPropNameInTable="SOxColumn" msprop:Generator_UserColumnName="SOx" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM" msprop:Generator_ColumnVarNameInTable="columnPM" msprop:Generator_ColumnPropNameInRow="PM" msprop:Generator_ColumnPropNameInTable="PMColumn" msprop:Generator_UserColumnName="PM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM10" msprop:Generator_ColumnVarNameInTable="columnPM10" msprop:Generator_ColumnPropNameInRow="PM10" msprop:Generator_ColumnPropNameInTable="PM10Column" msprop:Generator_UserColumnName="PM10" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM25" msprop:Generator_ColumnVarNameInTable="columnPM25" msprop:Generator_ColumnPropNameInRow="PM25" msprop:Generator_ColumnPropNameInTable="PM25Column" msprop:Generator_UserColumnName="PM25" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PermitSupersede" msprop:Generator_UserTableName="PermitSupersede" msprop:Generator_RowEvArgName="PermitSupersedeRowChangeEvent" msprop:Generator_TableVarName="tablePermitSupersede" msprop:Generator_TablePropName="PermitSupersede" msprop:Generator_RowDeletingName="PermitSupersedeRowDeleting" msprop:Generator_RowChangingName="PermitSupersedeRowChanging" msprop:Generator_RowDeletedName="PermitSupersedeRowDeleted" msprop:Generator_RowEvHandlerName="PermitSupersedeRowChangeEventHandler" msprop:Generator_TableClassName="PermitSupersedeDataTable" msprop:Generator_RowChangedName="PermitSupersedeRowChanged" msprop:Generator_RowClassName="PermitSupersedeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupersededPermitNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SupersededPermitNo" msprop:Generator_ColumnVarNameInTable="columnSupersededPermitNo" msprop:Generator_ColumnPropNameInTable="SupersededPermitNoColumn" msprop:Generator_UserColumnName="SupersededPermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupersededDate" msdata:ReadOnly="true" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="SupersededDate" msprop:Generator_ColumnVarNameInTable="columnSupersededDate" msprop:Generator_ColumnPropNameInTable="SupersededDateColumn" msprop:Generator_UserColumnName="SupersededDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PermitFeeHistory" msprop:Generator_UserTableName="PermitFeeHistory" msprop:Generator_RowEvArgName="PermitFeeHistoryRowChangeEvent" msprop:Generator_TableVarName="tablePermitFeeHistory" msprop:Generator_TablePropName="PermitFeeHistory" msprop:Generator_RowDeletingName="PermitFeeHistoryRowDeleting" msprop:Generator_RowChangingName="PermitFeeHistoryRowChanging" msprop:Generator_RowDeletedName="PermitFeeHistoryRowDeleted" msprop:Generator_RowEvHandlerName="PermitFeeHistoryRowChangeEventHandler" msprop:Generator_TableClassName="PermitFeeHistoryDataTable" msprop:Generator_RowChangedName="PermitFeeHistoryRowChanged" msprop:Generator_RowClassName="PermitFeeHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitFeeHistoryId" msprop:Generator_ColumnVarNameInTable="columnPermitFeeHistoryId" msprop:Generator_ColumnPropNameInRow="PermitFeeHistoryId" msprop:Generator_ColumnPropNameInTable="PermitFeeHistoryIdColumn" msprop:Generator_UserColumnName="PermitFeeHistoryId" type="xs:int" />
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitFeeActionId" msdata:Caption="PermitFeeActionNo" msprop:Generator_ColumnVarNameInTable="columnPermitFeeActionId" msprop:Generator_ColumnPropNameInRow="PermitFeeActionId" msprop:Generator_ColumnPropNameInTable="PermitFeeActionIdColumn" msprop:Generator_UserColumnName="PermitFeeActionId" type="xs:int" />
+              <xs:element name="PermitFeeDate" msprop:Generator_ColumnVarNameInTable="columnPermitFeeDate" msprop:Generator_ColumnPropNameInRow="PermitFeeDate" msprop:Generator_ColumnPropNameInTable="PermitFeeDateColumn" msprop:Generator_UserColumnName="PermitFeeDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PermitFee" msprop:Generator_ColumnVarNameInTable="columnPermitFee" msprop:Generator_ColumnPropNameInRow="PermitFee" msprop:Generator_ColumnPropNameInTable="PermitFeeColumn" msprop:Generator_UserColumnName="PermitFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FeeTypeNo" msprop:Generator_ColumnVarNameInTable="columnFeeTypeNo" msprop:Generator_ColumnPropNameInRow="FeeTypeNo" msprop:Generator_ColumnPropNameInTable="FeeTypeNoColumn" msprop:Generator_UserColumnName="FeeTypeNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentCompany" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="PaymentCompany" msprop:Generator_ColumnVarNameInTable="columnPaymentCompany" msprop:Generator_ColumnPropNameInTable="PaymentCompanyColumn" msprop:Generator_UserColumnName="PaymentCompany" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PermitActionHistory" msprop:Generator_UserTableName="PermitActionHistory" msprop:Generator_RowEvArgName="PermitActionHistoryRowChangeEvent" msprop:Generator_TableVarName="tablePermitActionHistory" msprop:Generator_TablePropName="PermitActionHistory" msprop:Generator_RowDeletingName="PermitActionHistoryRowDeleting" msprop:Generator_RowChangingName="PermitActionHistoryRowChanging" msprop:Generator_RowDeletedName="PermitActionHistoryRowDeleted" msprop:Generator_RowEvHandlerName="PermitActionHistoryRowChangeEventHandler" msprop:Generator_TableClassName="PermitActionHistoryDataTable" msprop:Generator_RowChangedName="PermitActionHistoryRowChanged" msprop:Generator_RowClassName="PermitActionHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitActionHistoryId" msprop:Generator_ColumnVarNameInTable="columnPermitActionHistoryId" msprop:Generator_ColumnPropNameInRow="PermitActionHistoryId" msprop:Generator_ColumnPropNameInTable="PermitActionHistoryIdColumn" msprop:Generator_UserColumnName="PermitActionHistoryId" type="xs:int" />
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitActionId" msprop:Generator_ColumnVarNameInTable="columnPermitActionId" msprop:Generator_ColumnPropNameInRow="PermitActionId" msprop:Generator_ColumnPropNameInTable="PermitActionIdColumn" msprop:Generator_UserColumnName="PermitActionId" type="xs:int" minOccurs="0" />
+              <xs:element name="PermitActionDate" msprop:Generator_ColumnVarNameInTable="columnPermitActionDate" msprop:Generator_ColumnPropNameInRow="PermitActionDate" msprop:Generator_ColumnPropNameInTable="PermitActionDateColumn" msprop:Generator_UserColumnName="PermitActionDate" type="xs:dateTime" />
+              <xs:element name="EmployeeIdNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="EmployeeIdNo" msprop:Generator_ColumnVarNameInTable="columnEmployeeIdNo" msprop:Generator_ColumnPropNameInTable="EmployeeIdNoColumn" msprop:Generator_UserColumnName="EmployeeIdNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LoginID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LoginID" msprop:Generator_ColumnVarNameInTable="columnLoginID" msprop:Generator_ColumnPropNameInTable="LoginIDColumn" msprop:Generator_UserColumnName="LoginID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PermitException" msprop:Generator_UserTableName="PermitException" msprop:Generator_RowEvArgName="PermitExceptionRowChangeEvent" msprop:Generator_TableVarName="tablePermitException" msprop:Generator_TablePropName="PermitException" msprop:Generator_RowDeletingName="PermitExceptionRowDeleting" msprop:Generator_RowChangingName="PermitExceptionRowChanging" msprop:Generator_RowDeletedName="PermitExceptionRowDeleted" msprop:Generator_RowEvHandlerName="PermitExceptionRowChangeEventHandler" msprop:Generator_TableClassName="PermitExceptionDataTable" msprop:Generator_RowChangedName="PermitExceptionRowChanged" msprop:Generator_RowClassName="PermitExceptionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExceptionId" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnExceptionId" msprop:Generator_ColumnPropNameInRow="ExceptionId" msprop:Generator_ColumnPropNameInTable="ExceptionIdColumn" msprop:Generator_UserColumnName="ExceptionId" type="xs:int" />
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExceptionEndDate" msprop:Generator_ColumnVarNameInTable="columnExceptionEndDate" msprop:Generator_ColumnPropNameInRow="ExceptionEndDate" msprop:Generator_ColumnPropNameInTable="ExceptionEndDateColumn" msprop:Generator_UserColumnName="ExceptionEndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExceptionTypeId" msprop:Generator_ColumnVarNameInTable="columnExceptionTypeId" msprop:Generator_ColumnPropNameInRow="ExceptionTypeId" msprop:Generator_ColumnPropNameInTable="ExceptionTypeIdColumn" msprop:Generator_UserColumnName="ExceptionTypeId" type="xs:int" minOccurs="0" />
+              <xs:element name="DaysExtended" msprop:Generator_ColumnVarNameInTable="columnDaysExtended" msprop:Generator_ColumnPropNameInRow="DaysExtended" msprop:Generator_ColumnPropNameInTable="DaysExtendedColumn" msprop:Generator_UserColumnName="DaysExtended" type="xs:int" minOccurs="0" />
+              <xs:element name="ExceptionReason" msprop:Generator_ColumnVarNameInTable="columnExceptionReason" msprop:Generator_ColumnPropNameInRow="ExceptionReason" msprop:Generator_ColumnPropNameInTable="ExceptionReasonColumn" msprop:Generator_UserColumnName="ExceptionReason" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Permit" />
+      <xs:field xpath="mstns:PermitNo" />
+    </xs:unique>
+    <xs:unique name="PermitProject_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:PermitProject" />
+      <xs:field xpath="mstns:PermitNo" />
+      <xs:field xpath="mstns:ProjectNo" />
+    </xs:unique>
+    <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PermitProject" />
+      <xs:field xpath="mstns:PermitProjectId" />
+    </xs:unique>
+    <xs:unique name="PermitSupersede_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PermitSupersede" />
+      <xs:field xpath="mstns:PermitNo" />
+      <xs:field xpath="mstns:SupersededPermitNo" />
+    </xs:unique>
+    <xs:unique name="PermitFeeHistory_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PermitFeeHistory" />
+      <xs:field xpath="mstns:PermitFeeHistoryId" />
+    </xs:unique>
+    <xs:unique name="PermitActionHistory_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PermitActionHistory" />
+      <xs:field xpath="mstns:PermitActionHistoryId" />
+    </xs:unique>
+    <xs:unique name="PermitException_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PermitException" />
+      <xs:field xpath="mstns:ExceptionId" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Permit_PermitProject" msdata:parent="Permit" msdata:child="PermitProject" msdata:parentkey="PermitNo" msdata:childkey="PermitNo" msprop:Generator_UserChildTable="PermitProject" msprop:Generator_ChildPropName="GetPermitProjectRows" msprop:Generator_UserRelationName="Permit_PermitProject" msprop:Generator_RelationVarName="relationPermit_PermitProject" msprop:Generator_UserParentTable="Permit" msprop:Generator_ParentPropName="PermitRow" />
+      <msdata:Relationship name="Permit_PermitEmissions" msdata:parent="Permit" msdata:child="PermitEmissions" msdata:parentkey="PermitNo" msdata:childkey="PermitNo" msprop:Generator_UserChildTable="PermitEmissions" msprop:Generator_ChildPropName="GetPermitEmissionsRows" msprop:Generator_UserRelationName="Permit_PermitEmissions" msprop:Generator_RelationVarName="relationPermit_PermitEmissions" msprop:Generator_UserParentTable="Permit" msprop:Generator_ParentPropName="PermitRow" />
+      <msdata:Relationship name="Permit_PermitSupersede" msdata:parent="Permit" msdata:child="PermitSupersede" msdata:parentkey="PermitNo" msdata:childkey="PermitNo" msprop:Generator_UserChildTable="PermitSupersede" msprop:Generator_ChildPropName="GetPermitSupersedeRows" msprop:Generator_UserRelationName="Permit_PermitSupersede" msprop:Generator_RelationVarName="relationPermit_PermitSupersede" msprop:Generator_UserParentTable="Permit" msprop:Generator_ParentPropName="PermitRow" />
+      <msdata:Relationship name="Permit_PermitFeeHistory" msdata:parent="Permit" msdata:child="PermitFeeHistory" msdata:parentkey="PermitNo" msdata:childkey="PermitNo" msprop:Generator_UserChildTable="PermitFeeHistory" msprop:Generator_ChildPropName="GetPermitFeeHistoryRows" msprop:Generator_UserRelationName="Permit_PermitFeeHistory" msprop:Generator_RelationVarName="relationPermit_PermitFeeHistory" msprop:Generator_UserParentTable="Permit" msprop:Generator_ParentPropName="PermitRow" />
+      <msdata:Relationship name="Permit_PermitException" msdata:parent="Permit" msdata:child="PermitException" msdata:parentkey="PermitNo" msdata:childkey="PermitNo" msprop:Generator_UserChildTable="PermitException" msprop:Generator_ChildPropName="GetPermitExceptionRows" msprop:Generator_UserRelationName="Permit_PermitException" msprop:Generator_RelationVarName="relationPermit_PermitException" msprop:Generator_UserParentTable="Permit" msprop:Generator_ParentPropName="PermitRow" />
+      <msdata:Relationship name="Permit_PermitActionHistory" msdata:parent="Permit" msdata:child="PermitActionHistory" msdata:parentkey="PermitNo" msdata:childkey="PermitNo" msprop:Generator_UserChildTable="PermitActionHistory" msprop:Generator_ChildPropName="GetPermitActionHistoryRows" msprop:Generator_UserRelationName="Permit_PermitActionHistory" msprop:Generator_RelationVarName="relationPermit_PermitActionHistory" msprop:Generator_UserParentTable="Permit" msprop:Generator_ParentPropName="PermitRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

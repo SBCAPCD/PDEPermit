@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ConnectionStringsDataSet" targetNamespace="http://tempuri.org/ConnectionStringsDataSet.xsd" xmlns:mstns="http://tempuri.org/ConnectionStringsDataSet.xsd" xmlns="http://tempuri.org/ConnectionStringsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Forms.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ConnectionStringsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ConnectionStringsDataSet" msprop:Generator_DataSetName="ConnectionStringsDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConnectionStrings" msprop:Generator_UserTableName="ConnectionStrings" msprop:Generator_RowDeletedName="ConnectionStringsRowDeleted" msprop:Generator_RowChangedName="ConnectionStringsRowChanged" msprop:Generator_RowClassName="ConnectionStringsRow" msprop:Generator_RowChangingName="ConnectionStringsRowChanging" msprop:Generator_RowEvArgName="ConnectionStringsRowChangeEvent" msprop:Generator_RowEvHandlerName="ConnectionStringsRowChangeEventHandler" msprop:Generator_TableClassName="ConnectionStringsDataTable" msprop:Generator_TableVarName="tableConnectionStrings" msprop:Generator_RowDeletingName="ConnectionStringsRowDeleting" msprop:Generator_TablePropName="ConnectionStrings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConnectionStringId" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ConnectionStringId" msprop:Generator_ColumnVarNameInTable="columnConnectionStringId" msprop:Generator_ColumnPropNameInRow="ConnectionStringId" msprop:Generator_ColumnPropNameInTable="ConnectionStringIdColumn" type="xs:int" />
+              <xs:element name="ConnectionString" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ConnectionString" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnConnectionString" msprop:Generator_ColumnPropNameInTable="ConnectionStringColumn" msprop:Generator_ColumnPropNameInRow="ConnectionString" type="xs:string" minOccurs="0" />
+              <xs:element name="ConStringDesc" msdata:ReadOnly="true" msprop:Generator_UserColumnName="ConStringDesc" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnConStringDesc" msprop:Generator_ColumnPropNameInTable="ConStringDescColumn" msprop:Generator_ColumnPropNameInRow="ConStringDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="SortOrder" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ConnectionStrings" />
+      <xs:field xpath="mstns:ConnectionStringId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

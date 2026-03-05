@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PdePermitAuxDataSet" targetNamespace="http://tempuri.org/PdePermitAuxDataSet.xsd" xmlns:mstns="http://tempuri.org/PdePermitAuxDataSet.xsd" xmlns="http://tempuri.org/PdePermitAuxDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Forms.Forms.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PdePermitAuxDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PdePermitAuxDataSet" msprop:Generator_DataSetName="PdePermitAuxDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CompaniesWithFacilities" msprop:Generator_UserTableName="CompaniesWithFacilities" msprop:Generator_RowDeletedName="CompaniesWithFacilitiesRowDeleted" msprop:Generator_RowChangedName="CompaniesWithFacilitiesRowChanged" msprop:Generator_RowClassName="CompaniesWithFacilitiesRow" msprop:Generator_RowChangingName="CompaniesWithFacilitiesRowChanging" msprop:Generator_RowEvArgName="CompaniesWithFacilitiesRowChangeEvent" msprop:Generator_RowEvHandlerName="CompaniesWithFacilitiesRowChangeEventHandler" msprop:Generator_TableClassName="CompaniesWithFacilitiesDataTable" msprop:Generator_TableVarName="tableCompaniesWithFacilities" msprop:Generator_RowDeletingName="CompaniesWithFacilitiesRowDeleting" msprop:Generator_TablePropName="CompaniesWithFacilities">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyNo" msprop:Generator_UserColumnName="CompanyNo" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCompanyNo" msprop:Generator_ColumnPropNameInTable="CompanyNoColumn" msprop:Generator_ColumnPropNameInRow="CompanyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyDesc" msprop:Generator_UserColumnName="CompanyDesc" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCompanyDesc" msprop:Generator_ColumnPropNameInTable="CompanyDescColumn" msprop:Generator_ColumnPropNameInRow="CompanyDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitStatus" msdata:ReadOnly="true" msprop:Generator_UserColumnName="PermitStatus" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnPermitStatus" msprop:Generator_ColumnPropNameInTable="PermitStatusColumn" msprop:Generator_ColumnPropNameInRow="PermitStatus" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

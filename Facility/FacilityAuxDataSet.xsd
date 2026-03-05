@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FacilityAuxDataSet" targetNamespace="http://tempuri.org/FacilityAuxDataSet.xsd" xmlns:mstns="http://tempuri.org/FacilityAuxDataSet.xsd" xmlns="http://tempuri.org/FacilityAuxDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.Facility.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FacilityAuxDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FacilityAuxDataSet" msprop:Generator_UserDSName="FacilityAuxDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PermitList" msprop:Generator_UserTableName="PermitList" msprop:Generator_RowEvArgName="PermitListRowChangeEvent" msprop:Generator_TableVarName="tablePermitList" msprop:Generator_TablePropName="PermitList" msprop:Generator_RowDeletingName="PermitListRowDeleting" msprop:Generator_RowChangingName="PermitListRowChanging" msprop:Generator_RowDeletedName="PermitListRowDeleted" msprop:Generator_RowEvHandlerName="PermitListRowChangeEventHandler" msprop:Generator_TableClassName="PermitListDataTable" msprop:Generator_RowChangedName="PermitListRowChanged" msprop:Generator_RowClassName="PermitListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Permit" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Permit" msprop:Generator_ColumnVarNameInTable="columnPermit" msprop:Generator_ColumnPropNameInTable="PermitColumn" msprop:Generator_UserColumnName="Permit" type="xs:string" minOccurs="0" />
+              <xs:element name="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocumentType" msprop:Generator_ColumnVarNameInTable="columnDocumentType" msprop:Generator_ColumnPropNameInRow="DocumentType" msprop:Generator_ColumnPropNameInTable="DocumentTypeColumn" msprop:Generator_UserColumnName="DocumentType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitNumber" msprop:Generator_ColumnVarNameInTable="columnPermitNumber" msprop:Generator_ColumnPropNameInRow="PermitNumber" msprop:Generator_ColumnPropNameInTable="PermitNumberColumn" msprop:Generator_UserColumnName="PermitNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitSuffix" msprop:Generator_ColumnVarNameInTable="columnPermitSuffix" msprop:Generator_ColumnPropNameInRow="PermitSuffix" msprop:Generator_ColumnPropNameInTable="PermitSuffixColumn" msprop:Generator_UserColumnName="PermitSuffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitStatus" msprop:Generator_ColumnVarNameInTable="columnPermitStatus" msprop:Generator_ColumnPropNameInRow="PermitStatus" msprop:Generator_ColumnPropNameInTable="PermitStatusColumn" msprop:Generator_UserColumnName="PermitStatus">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FourDigitSic" msprop:Generator_UserTableName="FourDigitSic" msprop:Generator_RowEvArgName="FourDigitSicRowChangeEvent" msprop:Generator_TableVarName="tableFourDigitSic" msprop:Generator_TablePropName="FourDigitSic" msprop:Generator_RowDeletingName="FourDigitSicRowDeleting" msprop:Generator_RowChangingName="FourDigitSicRowChanging" msprop:Generator_RowDeletedName="FourDigitSicRowDeleted" msprop:Generator_RowEvHandlerName="FourDigitSicRowChangeEventHandler" msprop:Generator_TableClassName="FourDigitSicDataTable" msprop:Generator_RowChangedName="FourDigitSicRowChanged" msprop:Generator_RowClassName="FourDigitSicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FourDigitSic" msprop:Generator_ColumnVarNameInTable="columnFourDigitSic" msprop:Generator_ColumnPropNameInRow="FourDigitSic" msprop:Generator_ColumnPropNameInTable="FourDigitSicColumn" msprop:Generator_UserColumnName="FourDigitSic">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FourDigitSicName" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FourDigitSicName" msprop:Generator_ColumnVarNameInTable="columnFourDigitSicName" msprop:Generator_ColumnPropNameInTable="FourDigitSicNameColumn" msprop:Generator_UserColumnName="FourDigitSicName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FacilityType" msprop:Generator_UserTableName="FacilityType" msprop:Generator_RowEvArgName="FacilityTypeRowChangeEvent" msprop:Generator_TableVarName="tableFacilityType" msprop:Generator_TablePropName="FacilityType" msprop:Generator_RowDeletingName="FacilityTypeRowDeleting" msprop:Generator_RowChangingName="FacilityTypeRowChanging" msprop:Generator_RowDeletedName="FacilityTypeRowDeleted" msprop:Generator_RowEvHandlerName="FacilityTypeRowChangeEventHandler" msprop:Generator_TableClassName="FacilityTypeDataTable" msprop:Generator_RowChangedName="FacilityTypeRowChanged" msprop:Generator_RowClassName="FacilityTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FacilityTypeId" msprop:Generator_ColumnVarNameInTable="columnFacilityTypeId" msprop:Generator_ColumnPropNameInRow="FacilityTypeId" msprop:Generator_ColumnPropNameInTable="FacilityTypeIdColumn" msprop:Generator_UserColumnName="FacilityTypeId" type="xs:int" />
+              <xs:element name="FacilityType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityType" msprop:Generator_ColumnVarNameInTable="columnFacilityType" msprop:Generator_ColumnPropNameInTable="FacilityTypeColumn" msprop:Generator_UserColumnName="FacilityType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Companies" msprop:Generator_UserTableName="Companies" msprop:Generator_RowEvArgName="CompaniesRowChangeEvent" msprop:Generator_TableVarName="tableCompanies" msprop:Generator_TablePropName="Companies" msprop:Generator_RowDeletingName="CompaniesRowDeleting" msprop:Generator_RowChangingName="CompaniesRowChanging" msprop:Generator_RowDeletedName="CompaniesRowDeleted" msprop:Generator_RowEvHandlerName="CompaniesRowChangeEventHandler" msprop:Generator_TableClassName="CompaniesDataTable" msprop:Generator_RowChangedName="CompaniesRowChanged" msprop:Generator_RowClassName="CompaniesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="CompanyNo" msprop:Generator_ColumnVarNameInTable="columnCompanyNo" msprop:Generator_ColumnPropNameInTable="CompanyNoColumn" msprop:Generator_UserColumnName="CompanyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyDesc" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="CompanyDesc" msprop:Generator_ColumnVarNameInTable="columnCompanyDesc" msprop:Generator_ColumnPropNameInTable="CompanyDescColumn" msprop:Generator_UserColumnName="CompanyDesc" type="xs:string" />
+              <xs:element name="Company" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StationarySourceList" msprop:Generator_UserTableName="StationarySourceList" msprop:Generator_RowEvArgName="StationarySourceListRowChangeEvent" msprop:Generator_TableVarName="tableStationarySourceList" msprop:Generator_TablePropName="StationarySourceList" msprop:Generator_RowDeletingName="StationarySourceListRowDeleting" msprop:Generator_RowChangingName="StationarySourceListRowChanging" msprop:Generator_RowDeletedName="StationarySourceListRowDeleted" msprop:Generator_RowEvHandlerName="StationarySourceListRowChangeEventHandler" msprop:Generator_TableClassName="StationarySourceListDataTable" msprop:Generator_RowChangedName="StationarySourceListRowChanged" msprop:Generator_RowClassName="StationarySourceListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StationarySourceName" msprop:Generator_ColumnVarNameInTable="columnStationarySourceName" msprop:Generator_ColumnPropNameInRow="StationarySourceName" msprop:Generator_ColumnPropNameInTable="StationarySourceNameColumn" msprop:Generator_UserColumnName="StationarySourceName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NovHistory" msprop:Generator_UserTableName="NovHistory" msprop:Generator_RowEvArgName="NovHistoryRowChangeEvent" msprop:Generator_TableVarName="tableNovHistory" msprop:Generator_TablePropName="NovHistory" msprop:Generator_RowDeletingName="NovHistoryRowDeleting" msprop:Generator_RowChangingName="NovHistoryRowChanging" msprop:Generator_RowDeletedName="NovHistoryRowDeleted" msprop:Generator_RowEvHandlerName="NovHistoryRowChangeEventHandler" msprop:Generator_TableClassName="NovHistoryDataTable" msprop:Generator_RowChangedName="NovHistoryRowChanged" msprop:Generator_RowClassName="NovHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NovNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NovNo" msprop:Generator_ColumnVarNameInTable="columnNovNo" msprop:Generator_ColumnPropNameInTable="NovNoColumn" msprop:Generator_UserColumnName="NovNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="CompanyNo" msprop:Generator_ColumnVarNameInTable="columnCompanyNo" msprop:Generator_ColumnPropNameInTable="CompanyNoColumn" msprop:Generator_UserColumnName="CompanyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOVType" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NOVType" msprop:Generator_ColumnVarNameInTable="columnNOVType" msprop:Generator_ColumnPropNameInTable="NOVTypeColumn" msprop:Generator_UserColumnName="NOVType" type="xs:string" minOccurs="0" />
+              <xs:element name="DescriptionOfViolation" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DescriptionOfViolation" msprop:Generator_ColumnVarNameInTable="columnDescriptionOfViolation" msprop:Generator_ColumnPropNameInTable="DescriptionOfViolationColumn" msprop:Generator_UserColumnName="DescriptionOfViolation" type="xs:string" minOccurs="0" />
+              <xs:element name="NovIssuedDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNovIssuedDate" msprop:Generator_ColumnPropNameInRow="NovIssuedDate" msprop:Generator_ColumnPropNameInTable="NovIssuedDateColumn" msprop:Generator_UserColumnName="NovIssuedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NovsPdfPath" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NovsPdfPath" msprop:Generator_ColumnVarNameInTable="columnNovsPdfPath" msprop:Generator_ColumnPropNameInTable="NovsPdfPathColumn" msprop:Generator_UserColumnName="NovsPdfPath" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContactType" msprop:Generator_UserTableName="ContactType" msprop:Generator_RowEvArgName="ContactTypeRowChangeEvent" msprop:Generator_TableVarName="tableContactType" msprop:Generator_TablePropName="ContactType" msprop:Generator_RowDeletingName="ContactTypeRowDeleting" msprop:Generator_RowChangingName="ContactTypeRowChanging" msprop:Generator_RowDeletedName="ContactTypeRowDeleted" msprop:Generator_RowEvHandlerName="ContactTypeRowChangeEventHandler" msprop:Generator_TableClassName="ContactTypeDataTable" msprop:Generator_RowChangedName="ContactTypeRowChanged" msprop:Generator_RowClassName="ContactTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContactTypeId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnContactTypeId" msprop:Generator_ColumnPropNameInRow="ContactTypeId" msprop:Generator_ColumnPropNameInTable="ContactTypeIdColumn" msprop:Generator_UserColumnName="ContactTypeId" type="xs:int" />
+              <xs:element name="ContactTypeDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ContactTypeDescription" msprop:Generator_ColumnVarNameInTable="columnContactTypeDescription" msprop:Generator_ColumnPropNameInTable="ContactTypeDescriptionColumn" msprop:Generator_UserColumnName="ContactTypeDescription" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="InspectionHistory" msprop:Generator_UserTableName="InspectionHistory" msprop:Generator_RowEvArgName="InspectionHistoryRowChangeEvent" msprop:Generator_TableVarName="tableInspectionHistory" msprop:Generator_TablePropName="InspectionHistory" msprop:Generator_RowDeletingName="InspectionHistoryRowDeleting" msprop:Generator_RowChangingName="InspectionHistoryRowChanging" msprop:Generator_RowDeletedName="InspectionHistoryRowDeleted" msprop:Generator_RowEvHandlerName="InspectionHistoryRowChangeEventHandler" msprop:Generator_TableClassName="InspectionHistoryDataTable" msprop:Generator_RowChangedName="InspectionHistoryRowChanged" msprop:Generator_RowClassName="InspectionHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InspectionNo" msprop:Generator_ColumnVarNameInTable="columnInspectionNo" msprop:Generator_ColumnPropNameInRow="InspectionNo" msprop:Generator_ColumnPropNameInTable="InspectionNoColumn" msprop:Generator_UserColumnName="InspectionNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Company" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="InspectionType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="InspectionType" msprop:Generator_ColumnVarNameInTable="columnInspectionType" msprop:Generator_ColumnPropNameInTable="InspectionTypeColumn" msprop:Generator_UserColumnName="InspectionType" type="xs:string" minOccurs="0" />
+              <xs:element name="InspectionDate" msprop:Generator_ColumnVarNameInTable="columnInspectionDate" msprop:Generator_ColumnPropNameInRow="InspectionDate" msprop:Generator_ColumnPropNameInTable="InspectionDateColumn" msprop:Generator_UserColumnName="InspectionDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Comments" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" msprop:Generator_UserColumnName="Comments" type="xs:string" minOccurs="0" />
+              <xs:element name="LoginId" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LoginId" msprop:Generator_ColumnVarNameInTable="columnLoginId" msprop:Generator_ColumnPropNameInTable="LoginIdColumn" msprop:Generator_UserColumnName="LoginId" type="xs:string" minOccurs="0" />
+              <xs:element name="InspectionPdfPath" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="InspectionPdfPath" msprop:Generator_ColumnVarNameInTable="columnInspectionPdfPath" msprop:Generator_ColumnPropNameInTable="InspectionPdfPathColumn" msprop:Generator_UserColumnName="InspectionPdfPath" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PermitHistory" msprop:Generator_UserTableName="PermitHistory" msprop:Generator_RowEvArgName="PermitHistoryRowChangeEvent" msprop:Generator_TableVarName="tablePermitHistory" msprop:Generator_TablePropName="PermitHistory" msprop:Generator_RowDeletingName="PermitHistoryRowDeleting" msprop:Generator_RowChangingName="PermitHistoryRowChanging" msprop:Generator_RowDeletedName="PermitHistoryRowDeleted" msprop:Generator_RowEvHandlerName="PermitHistoryRowChangeEventHandler" msprop:Generator_TableClassName="PermitHistoryDataTable" msprop:Generator_RowChangedName="PermitHistoryRowChanged" msprop:Generator_RowClassName="PermitHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PermitNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitNo" msprop:Generator_ColumnVarNameInTable="columnPermitNo" msprop:Generator_ColumnPropNameInTable="PermitNoColumn" msprop:Generator_UserColumnName="PermitNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocumentType" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DocumentType" msprop:Generator_ColumnVarNameInTable="columnDocumentType" msprop:Generator_ColumnPropNameInTable="DocumentTypeColumn" msprop:Generator_UserColumnName="DocumentType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitNumber" msprop:Generator_ColumnVarNameInTable="columnPermitNumber" msprop:Generator_ColumnPropNameInRow="PermitNumber" msprop:Generator_ColumnPropNameInTable="PermitNumberColumn" msprop:Generator_UserColumnName="PermitNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitSuffix" msprop:Generator_ColumnVarNameInTable="columnPermitSuffix" msprop:Generator_ColumnPropNameInRow="PermitSuffix" msprop:Generator_ColumnPropNameInTable="PermitSuffixColumn" msprop:Generator_UserColumnName="PermitSuffix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PermitStatus" msprop:Generator_ColumnVarNameInTable="columnPermitStatus" msprop:Generator_ColumnPropNameInRow="PermitStatus" msprop:Generator_ColumnPropNameInTable="PermitStatusColumn" msprop:Generator_UserColumnName="PermitStatus">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FinalDocumentIssued" msprop:Generator_ColumnVarNameInTable="columnFinalDocumentIssued" msprop:Generator_ColumnPropNameInRow="FinalDocumentIssued" msprop:Generator_ColumnPropNameInTable="FinalDocumentIssuedColumn" msprop:Generator_UserColumnName="FinalDocumentIssued" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PermitDesc" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PermitDesc" msprop:Generator_ColumnVarNameInTable="columnPermitDesc" msprop:Generator_ColumnPropNameInTable="PermitDescColumn" msprop:Generator_UserColumnName="PermitDesc" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BreakdownHistory" msprop:Generator_UserTableName="BreakdownHistory" msprop:Generator_RowEvArgName="BreakdownHistoryRowChangeEvent" msprop:Generator_TableVarName="tableBreakdownHistory" msprop:Generator_TablePropName="BreakdownHistory" msprop:Generator_RowDeletingName="BreakdownHistoryRowDeleting" msprop:Generator_RowChangingName="BreakdownHistoryRowChanging" msprop:Generator_RowDeletedName="BreakdownHistoryRowDeleted" msprop:Generator_RowEvHandlerName="BreakdownHistoryRowChangeEventHandler" msprop:Generator_TableClassName="BreakdownHistoryDataTable" msprop:Generator_RowChangedName="BreakdownHistoryRowChanged" msprop:Generator_RowClassName="BreakdownHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BreakdownNo" msprop:Generator_ColumnVarNameInTable="columnBreakdownNo" msprop:Generator_ColumnPropNameInRow="BreakdownNo" msprop:Generator_ColumnPropNameInTable="BreakdownNoColumn" msprop:Generator_UserColumnName="BreakdownNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Company" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="Permit" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Permit" msprop:Generator_ColumnVarNameInTable="columnPermit" msprop:Generator_ColumnPropNameInTable="PermitColumn" msprop:Generator_UserColumnName="Permit" type="xs:string" minOccurs="0" />
+              <xs:element name="BreakdownDate" msprop:Generator_ColumnVarNameInTable="columnBreakdownDate" msprop:Generator_ColumnPropNameInRow="BreakdownDate" msprop:Generator_ColumnPropNameInTable="BreakdownDateColumn" msprop:Generator_UserColumnName="BreakdownDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EquipmentID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="EquipmentID" msprop:Generator_ColumnVarNameInTable="columnEquipmentID" msprop:Generator_ColumnPropNameInTable="EquipmentIDColumn" msprop:Generator_UserColumnName="EquipmentID" type="xs:string" minOccurs="0" />
+              <xs:element name="EquipmentDesc" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="EquipmentDesc" msprop:Generator_ColumnVarNameInTable="columnEquipmentDesc" msprop:Generator_ColumnPropNameInTable="EquipmentDescColumn" msprop:Generator_UserColumnName="EquipmentDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="BreakdownCause" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BreakdownCause" msprop:Generator_ColumnVarNameInTable="columnBreakdownCause" msprop:Generator_ColumnPropNameInTable="BreakdownCauseColumn" msprop:Generator_UserColumnName="BreakdownCause" type="xs:string" minOccurs="0" />
+              <xs:element name="BreakdownDescription" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BreakdownDescription" msprop:Generator_ColumnVarNameInTable="columnBreakdownDescription" msprop:Generator_ColumnPropNameInTable="BreakdownDescriptionColumn" msprop:Generator_UserColumnName="BreakdownDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" msprop:Generator_UserColumnName="Comments" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VarianceHistory" msprop:Generator_UserTableName="VarianceHistory" msprop:Generator_RowEvArgName="VarianceHistoryRowChangeEvent" msprop:Generator_TableVarName="tableVarianceHistory" msprop:Generator_TablePropName="VarianceHistory" msprop:Generator_RowDeletingName="VarianceHistoryRowDeleting" msprop:Generator_RowChangingName="VarianceHistoryRowChanging" msprop:Generator_RowDeletedName="VarianceHistoryRowDeleted" msprop:Generator_RowEvHandlerName="VarianceHistoryRowChangeEventHandler" msprop:Generator_TableClassName="VarianceHistoryDataTable" msprop:Generator_RowChangedName="VarianceHistoryRowChanged" msprop:Generator_RowClassName="VarianceHistoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VarianceCase" msprop:Generator_ColumnVarNameInTable="columnVarianceCase" msprop:Generator_ColumnPropNameInRow="VarianceCase" msprop:Generator_ColumnPropNameInTable="VarianceCaseColumn" msprop:Generator_UserColumnName="VarianceCase" type="xs:string" />
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Company" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="Permit" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Permit" msprop:Generator_ColumnVarNameInTable="columnPermit" msprop:Generator_ColumnPropNameInTable="PermitColumn" msprop:Generator_UserColumnName="Permit" type="xs:string" minOccurs="0" />
+              <xs:element name="ApplicationDate" msprop:Generator_ColumnVarNameInTable="columnApplicationDate" msprop:Generator_ColumnPropNameInRow="ApplicationDate" msprop:Generator_ColumnPropNameInTable="ApplicationDateColumn" msprop:Generator_UserColumnName="ApplicationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Equipment" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Equipment" msprop:Generator_ColumnVarNameInTable="columnEquipment" msprop:Generator_ColumnPropNameInTable="EquipmentColumn" msprop:Generator_UserColumnName="Equipment" type="xs:string" minOccurs="0" />
+              <xs:element name="VarianceRule" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="VarianceRule" msprop:Generator_ColumnVarNameInTable="columnVarianceRule" msprop:Generator_ColumnPropNameInTable="VarianceRuleColumn" msprop:Generator_UserColumnName="VarianceRule" type="xs:string" minOccurs="0" />
+              <xs:element name="Comments" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" msprop:Generator_UserColumnName="Comments" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AddressSearchString" msprop:Generator_UserTableName="AddressSearchString" msprop:Generator_RowEvArgName="AddressSearchStringRowChangeEvent" msprop:Generator_TableVarName="tableAddressSearchString" msprop:Generator_TablePropName="AddressSearchString" msprop:Generator_RowDeletingName="AddressSearchStringRowDeleting" msprop:Generator_RowChangingName="AddressSearchStringRowChanging" msprop:Generator_RowDeletedName="AddressSearchStringRowDeleted" msprop:Generator_RowEvHandlerName="AddressSearchStringRowChangeEventHandler" msprop:Generator_TableClassName="AddressSearchStringDataTable" msprop:Generator_RowChangedName="AddressSearchStringRowChanged" msprop:Generator_RowClassName="AddressSearchStringRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AddressNo" msprop:Generator_ColumnVarNameInTable="columnAddressNo" msprop:Generator_ColumnPropNameInRow="AddressNo" msprop:Generator_ColumnPropNameInTable="AddressNoColumn" msprop:Generator_UserColumnName="AddressNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AddressSearchString" msdata:ReadOnly="true" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="AddressSearchString" msprop:Generator_ColumnVarNameInTable="columnAddressSearchString" msprop:Generator_ColumnPropNameInTable="AddressSearchStringColumn" msprop:Generator_UserColumnName="AddressSearchString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NewFacilityEmissions" msprop:Generator_UserTableName="NewFacilityEmissions" msprop:Generator_RowEvArgName="NewFacilityEmissionsRowChangeEvent" msprop:Generator_TableVarName="tableNewFacilityEmissions" msprop:Generator_TablePropName="NewFacilityEmissions" msprop:Generator_RowDeletingName="NewFacilityEmissionsRowDeleting" msprop:Generator_RowChangingName="NewFacilityEmissionsRowChanging" msprop:Generator_RowDeletedName="NewFacilityEmissionsRowDeleted" msprop:Generator_RowEvHandlerName="NewFacilityEmissionsRowChangeEventHandler" msprop:Generator_TableClassName="NewFacilityEmissionsDataTable" msprop:Generator_RowChangedName="NewFacilityEmissionsRowChanged" msprop:Generator_RowClassName="NewFacilityEmissionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationarySourceNo" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" msprop:Generator_UserColumnName="StationarySourceNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn" msprop:Generator_UserColumnName="FacilityNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmissionsType" msprop:Generator_ColumnVarNameInTable="columnEmissionsType" msprop:Generator_ColumnPropNameInRow="EmissionsType" msprop:Generator_ColumnPropNameInTable="EmissionsTypeColumn" msprop:Generator_UserColumnName="EmissionsType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmissionsUnits" msprop:Generator_ColumnVarNameInTable="columnEmissionsUnits" msprop:Generator_ColumnPropNameInRow="EmissionsUnits" msprop:Generator_ColumnPropNameInTable="EmissionsUnitsColumn" msprop:Generator_UserColumnName="EmissionsUnits">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOx" msprop:Generator_ColumnVarNameInTable="columnNOx" msprop:Generator_ColumnPropNameInRow="NOx" msprop:Generator_ColumnPropNameInTable="NOxColumn" msprop:Generator_UserColumnName="NOx" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ROC" msprop:Generator_ColumnVarNameInTable="columnROC" msprop:Generator_ColumnPropNameInRow="ROC" msprop:Generator_ColumnPropNameInTable="ROCColumn" msprop:Generator_UserColumnName="ROC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CO" msprop:Generator_ColumnVarNameInTable="columnCO" msprop:Generator_ColumnPropNameInRow="CO" msprop:Generator_ColumnPropNameInTable="COColumn" msprop:Generator_UserColumnName="CO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOx" msprop:Generator_ColumnVarNameInTable="columnSOx" msprop:Generator_ColumnPropNameInRow="SOx" msprop:Generator_ColumnPropNameInTable="SOxColumn" msprop:Generator_UserColumnName="SOx" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM" msprop:Generator_ColumnVarNameInTable="columnPM" msprop:Generator_ColumnPropNameInRow="PM" msprop:Generator_ColumnPropNameInTable="PMColumn" msprop:Generator_UserColumnName="PM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM10" msprop:Generator_ColumnVarNameInTable="columnPM10" msprop:Generator_ColumnPropNameInRow="PM10" msprop:Generator_ColumnPropNameInTable="PM10Column" msprop:Generator_UserColumnName="PM10" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM25" msprop:Generator_ColumnVarNameInTable="columnPM25" msprop:Generator_ColumnPropNameInRow="PM25" msprop:Generator_ColumnPropNameInTable="PM25Column" msprop:Generator_UserColumnName="PM25" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NaicsCode" msprop:Generator_TableClassName="NaicsCodeDataTable" msprop:Generator_TableVarName="tableNaicsCode" msprop:Generator_TablePropName="NaicsCode" msprop:Generator_RowDeletingName="NaicsCodeRowDeleting" msprop:Generator_RowChangingName="NaicsCodeRowChanging" msprop:Generator_RowEvHandlerName="NaicsCodeRowChangeEventHandler" msprop:Generator_RowDeletedName="NaicsCodeRowDeleted" msprop:Generator_UserTableName="NaicsCode" msprop:Generator_RowChangedName="NaicsCodeRowChanged" msprop:Generator_RowEvArgName="NaicsCodeRowChangeEvent" msprop:Generator_RowClassName="NaicsCodeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NaicsCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NaicsCode" msprop:Generator_ColumnVarNameInTable="columnNaicsCode" msprop:Generator_ColumnPropNameInTable="NaicsCodeColumn" msprop:Generator_UserColumnName="NaicsCode" type="xs:string" minOccurs="0" />
+              <xs:element name="NaicsTitle" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NaicsTitle" msprop:Generator_ColumnVarNameInTable="columnNaicsTitle" msprop:Generator_ColumnPropNameInTable="NaicsTitleColumn" msprop:Generator_UserColumnName="NaicsTitle" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PermitList" />
+      <xs:field xpath="mstns:PermitNo" />
+    </xs:unique>
+    <xs:unique name="FourDigitSic_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FourDigitSic" />
+      <xs:field xpath="mstns:FourDigitSic" />
+    </xs:unique>
+    <xs:unique name="FacilityType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FacilityType" />
+      <xs:field xpath="mstns:FacilityTypeId" />
+    </xs:unique>
+    <xs:unique name="StationarySourceList_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:StationarySourceList" />
+      <xs:field xpath="mstns:StationarySourceNo" />
+    </xs:unique>
+    <xs:unique name="ContactType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ContactType" />
+      <xs:field xpath="mstns:ContactTypeId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

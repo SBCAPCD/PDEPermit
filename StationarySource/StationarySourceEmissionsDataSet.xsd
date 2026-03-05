@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StationarySourceEmissionsDataSet" targetNamespace="http://tempuri.org/StationarySourceEmissionsDataSet.xsd" xmlns:mstns="http://tempuri.org/StationarySourceEmissionsDataSet.xsd" xmlns="http://tempuri.org/StationarySourceEmissionsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.PdePermit.StationarySource.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StationarySourceEmissionsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="StationarySourceEmissionsDataSet" msprop:Generator_UserDSName="StationarySourceEmissionsDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StationarySourceEmissions" msprop:Generator_UserTableName="StationarySourceEmissions" msprop:Generator_RowDeletedName="StationarySourceEmissionsRowDeleted" msprop:Generator_TableClassName="StationarySourceEmissionsDataTable" msprop:Generator_RowChangedName="StationarySourceEmissionsRowChanged" msprop:Generator_RowClassName="StationarySourceEmissionsRow" msprop:Generator_RowChangingName="StationarySourceEmissionsRowChanging" msprop:Generator_RowEvArgName="StationarySourceEmissionsRowChangeEvent" msprop:Generator_RowEvHandlerName="StationarySourceEmissionsRowChangeEventHandler" msprop:Generator_TablePropName="StationarySourceEmissions" msprop:Generator_TableVarName="tableStationarySourceEmissions" msprop:Generator_RowDeletingName="StationarySourceEmissionsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationarySourceNo" msprop:Generator_UserColumnName="StationarySourceNo" msprop:Generator_ColumnPropNameInRow="StationarySourceNo" msprop:Generator_ColumnVarNameInTable="columnStationarySourceNo" msprop:Generator_ColumnPropNameInTable="StationarySourceNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacilityNo" msprop:Generator_UserColumnName="FacilityNo" msprop:Generator_ColumnPropNameInRow="FacilityNo" msprop:Generator_ColumnVarNameInTable="columnFacilityNo" msprop:Generator_ColumnPropNameInTable="FacilityNoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmissionsType" msprop:Generator_UserColumnName="EmissionsType" msprop:Generator_ColumnPropNameInRow="EmissionsType" msprop:Generator_ColumnVarNameInTable="columnEmissionsType" msprop:Generator_ColumnPropNameInTable="EmissionsTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmissionsUnits" msprop:Generator_UserColumnName="EmissionsUnits" msprop:Generator_ColumnPropNameInRow="EmissionsUnits" msprop:Generator_ColumnVarNameInTable="columnEmissionsUnits" msprop:Generator_ColumnPropNameInTable="EmissionsUnitsColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SortOrder" msprop:Generator_UserColumnName="SortOrder" msprop:Generator_ColumnPropNameInRow="SortOrder" msprop:Generator_ColumnVarNameInTable="columnSortOrder" msprop:Generator_ColumnPropNameInTable="SortOrderColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NOx" msprop:Generator_UserColumnName="NOx" msprop:Generator_ColumnPropNameInRow="NOx" msprop:Generator_ColumnVarNameInTable="columnNOx" msprop:Generator_ColumnPropNameInTable="NOxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ROC" msprop:Generator_UserColumnName="ROC" msprop:Generator_ColumnPropNameInRow="ROC" msprop:Generator_ColumnVarNameInTable="columnROC" msprop:Generator_ColumnPropNameInTable="ROCColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CO" msprop:Generator_UserColumnName="CO" msprop:Generator_ColumnPropNameInRow="CO" msprop:Generator_ColumnVarNameInTable="columnCO" msprop:Generator_ColumnPropNameInTable="COColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOx" msprop:Generator_UserColumnName="SOx" msprop:Generator_ColumnPropNameInRow="SOx" msprop:Generator_ColumnVarNameInTable="columnSOx" msprop:Generator_ColumnPropNameInTable="SOxColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM" msprop:Generator_UserColumnName="PM" msprop:Generator_ColumnPropNameInRow="PM" msprop:Generator_ColumnVarNameInTable="columnPM" msprop:Generator_ColumnPropNameInTable="PMColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM10" msprop:Generator_UserColumnName="PM10" msprop:Generator_ColumnPropNameInRow="PM10" msprop:Generator_ColumnVarNameInTable="columnPM10" msprop:Generator_ColumnPropNameInTable="PM10Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PM25" msprop:Generator_UserColumnName="PM25" msprop:Generator_ColumnPropNameInRow="PM25" msprop:Generator_ColumnVarNameInTable="columnPM25" msprop:Generator_ColumnPropNameInTable="PM25Column" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FacilityName" msprop:Generator_UserColumnName="FacilityName" msprop:Generator_ColumnPropNameInRow="FacilityName" msprop:Generator_ColumnVarNameInTable="columnFacilityName" msprop:Generator_ColumnPropNameInTable="FacilityNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StationarySourceName" msprop:Generator_UserColumnName="StationarySourceName" msprop:Generator_ColumnPropNameInRow="StationarySourceName" msprop:Generator_ColumnVarNameInTable="columnStationarySourceName" msprop:Generator_ColumnPropNameInTable="StationarySourceNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmissionsTypeSort" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EmissionsTypeSort" msprop:Generator_ColumnPropNameInRow="EmissionsTypeSort" msprop:Generator_ColumnVarNameInTable="columnEmissionsTypeSort" msprop:Generator_ColumnPropNameInTable="EmissionsTypeSortColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

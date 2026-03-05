@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ContactAuxDataSet" targetNamespace="http://tempuri.org/ContactAuxDataSet.xsd" xmlns:mstns="http://tempuri.org/ContactAuxDataSet.xsd" xmlns="http://tempuri.org/ContactAuxDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PSAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PSAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SbcapcdOrg.Contact.Properties.Settings.GlobalReference.Default.PSAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ContactAuxDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ContactAuxDataSet" msprop:Generator_UserDSName="ContactAuxDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NamePrefix" msprop:Generator_UserTableName="NamePrefix" msprop:Generator_RowEvArgName="NamePrefixRowChangeEvent" msprop:Generator_TableVarName="tableNamePrefix" msprop:Generator_TablePropName="NamePrefix" msprop:Generator_RowDeletingName="NamePrefixRowDeleting" msprop:Generator_RowChangingName="NamePrefixRowChanging" msprop:Generator_RowDeletedName="NamePrefixRowDeleted" msprop:Generator_RowEvHandlerName="NamePrefixRowChangeEventHandler" msprop:Generator_TableClassName="NamePrefixDataTable" msprop:Generator_RowChangedName="NamePrefixRowChanged" msprop:Generator_RowClassName="NamePrefixRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NamePrefix" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NamePrefix" msprop:Generator_ColumnVarNameInTable="columnNamePrefix" msprop:Generator_ColumnPropNameInTable="NamePrefixColumn" msprop:Generator_UserColumnName="NamePrefix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NameSuffix" msprop:Generator_UserTableName="NameSuffix" msprop:Generator_RowEvArgName="NameSuffixRowChangeEvent" msprop:Generator_TableVarName="tableNameSuffix" msprop:Generator_TablePropName="NameSuffix" msprop:Generator_RowDeletingName="NameSuffixRowDeleting" msprop:Generator_RowChangingName="NameSuffixRowChanging" msprop:Generator_RowDeletedName="NameSuffixRowDeleted" msprop:Generator_RowEvHandlerName="NameSuffixRowChangeEventHandler" msprop:Generator_TableClassName="NameSuffixDataTable" msprop:Generator_RowChangedName="NameSuffixRowChanged" msprop:Generator_RowClassName="NameSuffixRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NameSuffix" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="NameSuffix" msprop:Generator_ColumnVarNameInTable="columnNameSuffix" msprop:Generator_ColumnPropNameInTable="NameSuffixColumn" msprop:Generator_UserColumnName="NameSuffix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PositionTitle" msprop:Generator_UserTableName="PositionTitle" msprop:Generator_RowEvArgName="PositionTitleRowChangeEvent" msprop:Generator_TableVarName="tablePositionTitle" msprop:Generator_TablePropName="PositionTitle" msprop:Generator_RowDeletingName="PositionTitleRowDeleting" msprop:Generator_RowChangingName="PositionTitleRowChanging" msprop:Generator_RowDeletedName="PositionTitleRowDeleted" msprop:Generator_RowEvHandlerName="PositionTitleRowChangeEventHandler" msprop:Generator_TableClassName="PositionTitleDataTable" msprop:Generator_RowChangedName="PositionTitleRowChanged" msprop:Generator_RowClassName="PositionTitleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PositionTitle" msdata:ReadOnly="true" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PositionTitle" msprop:Generator_ColumnVarNameInTable="columnPositionTitle" msprop:Generator_ColumnPropNameInTable="PositionTitleColumn" msprop:Generator_UserColumnName="PositionTitle" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SortGroup" msprop:Generator_TableClassName="SortGroupDataTable" msprop:Generator_TableVarName="tableSortGroup" msprop:Generator_TablePropName="SortGroup" msprop:Generator_RowDeletingName="SortGroupRowDeleting" msprop:Generator_RowChangingName="SortGroupRowChanging" msprop:Generator_RowEvHandlerName="SortGroupRowChangeEventHandler" msprop:Generator_RowDeletedName="SortGroupRowDeleted" msprop:Generator_UserTableName="SortGroup" msprop:Generator_RowChangedName="SortGroupRowChanged" msprop:Generator_RowEvArgName="SortGroupRowChangeEvent" msprop:Generator_RowClassName="SortGroupRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SortGroup" msprop:Generator_ColumnVarNameInTable="columnSortGroup" msprop:Generator_ColumnPropNameInRow="SortGroup" msprop:Generator_ColumnPropNameInTable="SortGroupColumn" msprop:Generator_UserColumnName="SortGroup" type="xs:string" minOccurs="0" />
+              <xs:element name="SortGroupName" msprop:Generator_ColumnVarNameInTable="columnSortGroupName" msprop:Generator_ColumnPropNameInRow="SortGroupName" msprop:Generator_ColumnPropNameInTable="SortGroupNameColumn" msprop:Generator_UserColumnName="SortGroupName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

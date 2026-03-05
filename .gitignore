@@ -1,0 +1,35 @@
+# Strong Name Key files (contain private cryptographic keys)
+*.snk
+
+# Certificate and key files
+*.pfx
+*.p12
+*.cer
+
+# Visual Studio Source Control metadata
+*.vspscc
+*.vssscc
+MSSCCPRJ.SCC
+*.scc
+
+# User-specific and local VS files
+*.user
+*.suo
+.vs/
+
+# Dataset schema cache files (auto-generated, not needed for review)
+*.xsc
+*.xss
+
+# VS upgrade artifacts
+_UpgradeReport_Files/
+UpgradeLog*.XML
+
+# Build output
+[Bb]in/
+[Oo]bj/
+*.cache
+
+# NuGet packages (restore via NuGet)
+packages/
+*.nupkg
