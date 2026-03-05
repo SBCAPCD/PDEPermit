@@ -25,6 +25,11 @@ MSSCCPRJ.SCC
 _UpgradeReport_Files/
 UpgradeLog*.XML
 
+# Visual Studio profiling data
+*.psess
+*.vsp
+*.vspx
+
 # Build output
 [Bb]in/
 [Oo]bj/
